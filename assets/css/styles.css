@@ -1,0 +1,183 @@
+:root {
+  --header-height: 6rem;
+
+  /*========== Colors ==========*/
+  --primary-color: rgb(112, 119, 221);
+  --secondary-color: rgb(255, 236, 102);
+  --tertiary-color: rgb(255, 225, 0);
+
+  --container-bg-color: #e5e5cb;
+  --container-bg-color-2: #9b7b2e;
+  --container-bg-color-3: rgb(20, 8, 41);
+
+  --body-bg-gradient: linear-gradient(
+    to right,
+    rgb(20, 8, 41),
+    rgb(63, 47, 126),
+    rgb(81, 4, 176)
+  );
+
+  --up-indicator-color: rgb(9, 222, 90);
+  --down-indicator-color: rgb(222, 9, 9);
+
+  --title-color: rgb(253, 253, 253);
+  --text-color: rgb(0, 0, 0);
+  --text-color-2: rgb(142, 144, 148);
+
+  /*========== Font and typography ==========*/
+  --font-1: "Barlow", sans-serif;
+  --font-2: "Kanit", sans-serif;
+  --font-3: "Poppins", sans-serif;
+
+  --fs-4xl: 5.6rem;
+  --fs-3xl: 4.6rem;
+  --fs-2xl: 3.6rem;
+  --fs-xl: 3rem;
+  --fs-l: 2.4rem;
+  --fs-m: 1.8rem;
+  --fs-s: 1.6rem;
+  --fs-xs: 1.4rem;
+
+  /*========== Font weight ==========*/
+  --fw-normal: 300;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+  --fw-super-bold: 900;
+
+  /*========== Margenes Bottom ==========*/
+  --m-025: 0.4rem;
+  --m-05: 0.8rem;
+  --m-075: 1.2rem;
+  --m-1: 1.6rem;
+  --m-15: 2rem;
+  --m-2: 3.2rem;
+  --m-25: 3.8rem;
+  --m-3: 4.8rem;
+  --m-4: 7rem;
+  --m-5: 9rem;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+/* Font size for large devices */
+@media screen and (max-width: 968px) {
+  :root {
+    --fs-4xl: 4rem;
+    --fs-3xl: 3.2rem;
+    --fs-2xl: 2.8rem;
+    --fs-xl: 2rem;
+    --fs-l: 1.8rem;
+    --fs-m: 1.6rem;
+    --fs-s: 1.4rem;
+    --fs-xs: 1.3rem;
+  }
+}
+
+/*==================== BASE ====================*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-1);
+  font-size: var(--fs-m);
+  background: var(--body-color);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+  font-family: var(--font-1);
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+a:hover {
+  color: black;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: var(--font-size-small);
+  }
+
+  h1 {
+    font-size: var(--font-size-medium);
+  }
+
+  p {
+    font-size: var(--font-size-small);
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: var(--font-size-small);
+  }
+
+  h1 {
+    font-size: var(--font-size-small);
+  }
+
+  p {
+    font-size: var(--font-size-small);
+  }
+}
+
+header {
+  position: fixed;
+  top: 0;
+  padding: 1rem 4rem;
+  color: black;
+  background-color: var(--container-bg-color-2);
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--header-height);
+}
+nav {
+}
+nav ul {
+  display: flex;
+  gap: 2rem;
+}
+nav a {
+  font-size: var(--fs-s);
+  text-transform: capitalize;
+}
+nav i {
+  margin-right: 1rem;
+}
+.logo {
+  width: 5rem;
+}
+main {
+  margin-top: var(--header-height);
+}
+.hero__section {
+  background-color: var(--container-bg-color);
+}
