@@ -21,6 +21,7 @@
   --down-indicator-color: rgb(222, 9, 9);
 
   --title-color: rgb(253, 253, 253);
+  --heading-color: #9b7b2e;
   --text-color: rgb(0, 0, 0);
   --text-color-2: rgb(142, 144, 148);
 
@@ -91,17 +92,21 @@ html {
 body {
   font-family: var(--font-1);
   font-size: var(--fs-m);
-  background: var(--body-color);
+  background-color: var(--container-bg-color);
   color: var(--text-color);
 }
 
 h1,
 h2,
 h3,
-h4 {
-  color: var(--title-color);
-  font-weight: var(--font-semi-bold);
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+  font-weight: var(--fw-bold);
   font-family: var(--font-1);
+  text-transform: capitalize;
+  line-height: 1.6;
 }
 ul {
   list-style-type: none;
@@ -147,17 +152,53 @@ img {
   }
 }
 
+section {
+  padding: 4rem 4rem;
+  max-width: 1980px;
+}
+.header__wrap {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
 header {
   position: fixed;
+  z-index: var(--z-fixed);
   top: 0;
-  padding: 1rem 4rem;
+  left: 0;
+  right: 0;
+  padding: 1rem 3rem;
+  margin: 0 auto;
   color: black;
   background-color: var(--container-bg-color-2);
   display: flex;
-  width: 100%;
+  width: fit-content;
   justify-content: space-between;
   align-items: center;
   height: var(--header-height);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+header::before {
+  content: "";
+  position: absolute;
+  top: -2.3rem;
+  left: -2.2rem;
+  width: 3rem;
+  height: calc(var(--header-height) + 2rem);
+  background-color: #9b7b2e;
+  transform: rotate(150deg);
+}
+header::after {
+  content: "";
+  position: absolute;
+  top: -2.3rem;
+  right: -2.2rem;
+  width: 3rem;
+  height: calc(var(--header-height) + 2rem);
+  background-color: #9b7b2e;
+  transform: rotate(-150deg);
 }
 nav {
 }
@@ -169,15 +210,118 @@ nav a {
   font-size: var(--fs-s);
   text-transform: capitalize;
 }
+nav a:hover {
+  color: white;
+}
 nav i {
   margin-right: 1rem;
 }
-.logo {
-  width: 5rem;
+
+.logo__container {
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-3rem);
+  gap: 2rem;
+  margin-left: 2rem;
+}
+.logo__container img {
+  max-width: 15rem;
+}
+.logo__container span {
+  color: #9b7b2e;
+  text-transform: capitalize;
 }
 main {
-  margin-top: var(--header-height);
+  margin-top: 1rem;
 }
+
+/*==================== Hero section ====================*/
 .hero__section {
-  background-color: var(--container-bg-color);
+  display: flex;
+  position: relative;
+  gap: 2rem;
+  align-items: center;
+}
+.hero__text {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.hero__text h1 {
+  font-weight: var(--fw-super-bold);
+  font-size: var(--fs-3xl);
+  text-transform: uppercase;
+}
+.hero__slider {
+  width: 60%;
+  padding: 4rem;
+}
+.hero__swiper {
+  position: relative;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.hero__slider img {
+  cursor: grab;
+}
+.hero__swiper-button-prev,
+.hero__swiper-button-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  z-index: var(--z-tooltip);
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: var(--fs-2xl);
+  color: var(--container-bg-color-2);
+  background-color: black;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.hero__swiper-button-prev:hover,
+.hero__swiper-button-next:hover {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}
+.hero__swiper-button-prev {
+  left: 2%;
+}
+.hero__swiper-button-next {
+  right: 2%;
+}
+.swiper-pagination-bullet {
+  width: 3rem;
+  height: 1rem;
+  border-radius: 10px;
+  background-color: black;
+  color: black;
+  opacity: 0.5;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.swiper-pagination-bullet-active {
+  background-color: #c58e0e;
+  opacity: 1;
+}
+/*==================== BUTTONS ====================*/
+.show__button {
+  border: none;
+  border-radius: 20px;
+  font-size: var(--fs-m);
+  font-family: var(--font-1);
+  padding: 1.5rem 2rem;
+  background-color: black;
+  color: var(--container-bg-color-2);
+  font-weight: var(--fw-semi-bold);
+  text-transform: capitalize;
+  margin-top: 2rem;
+  align-self: center;
+  cursor: pointer;
+}
+.show__button:hover {
+  color: white;
 }

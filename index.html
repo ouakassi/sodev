@@ -10,11 +10,15 @@
       href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="/assets/css/styles.css" />
   </head>
   <body>
+    <!-- <div class="header__wrap"> -->
     <header>
-      <img class="logo" src="./assets//imgs//LOGO-black.svg" alt="sodev-logo" />
       <nav>
         <ul>
           <li>
@@ -36,29 +40,74 @@
         </ul>
       </nav>
     </header>
+    <!-- </div> -->
+
     <main>
       <section class="hero__section section">
         <div class="hero__text">
+          <div class="logo__container">
+            <img
+              class="logo"
+              src="./assets//imgs//LOGO-black.svg"
+              alt="sodev-logo"
+            />
+            <span>creativity & services</span>
+          </div>
+
+          <h1>web development</h1>
           <p>
-            Bienvenue sur notre site de développement ! Nous sommes une équipe
-            passionnée de professionnels du développement informatique, dédiée à
-            créer des solutions innovantes pour répondre à vos besoins. Que vous
-            soyez une petite entreprise en pleine croissance ou une grande
-            organisation internationale. Explorez notre site pour découvrir nos
-            réalisations précédentes et n'hésitez pas à nous contacter pour
+            <strong>Bienvenue sur notre site de développement !</strong> Nous
+            sommes une équipe passionnée de professionnels du développement
+            informatique, dédiée à créer des solutions innovantes pour répondre
+            à vos besoins. Que vous soyez une petite entreprise en pleine
+            croissance ou une grande organisation internationale. <br />
+            <br />
+            <strong>Explorez</strong> notre site pour découvrir nos réalisations
+            précédentes et n'hésitez pas à <strong>nous contacter</strong> pour
             discuter de votre projet. Nous sommes impatients de travailler avec
-            vous et de transformer vos idées en réalité numérique.
+            vous et de
+            <strong>transformer vos idées en réalité numérique.</strong>
           </p>
+          <button class="show__button">nous contactez</button>
         </div>
         <div class="hero__slider">
-          <img src="" alt="" />
+          <div class="swiper hero__swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <img
+                class="swiper-slide"
+                src="/assets/imgs/slider1.png"
+                alt="slider1"
+              />
+              <img
+                class="swiper-slide"
+                src="/assets/imgs/slider2.png"
+                alt="slider2"
+              />
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="hero__swiper-button-prev">
+              <i class="fa-solid fa-caret-left"></i>
+            </div>
+            <div class="hero__swiper-button-next">
+              <i class="fa-solid fas fa-caret-right"></i>
+            </div>
+          </div>
         </div>
       </section>
     </main>
   </body>
-
+  <!--========== Fontawesome ==========-->
   <script
     src="https://kit.fontawesome.com/1d3b35f3ec.js"
     crossorigin="anonymous"
   ></script>
+  <!--========== Swiper ==========-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!--========== Main Js ==========-->
+  <script src="/assets//javascript/script.js"></script>
 </html>
