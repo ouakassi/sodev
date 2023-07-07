@@ -22,7 +22,7 @@
       <nav>
         <ul>
           <li>
-            <a href="#home"><i class="fa-solid fa-house"></i>home</a>
+            <a href="#hero"><i class="fa-solid fa-house"></i>home</a>
           </li>
           <li>
             <a href="#services"
@@ -30,7 +30,7 @@
             >
           </li>
           <li>
-            <a href="#contact"><i class="fa-solid fa-phone"></i>contact</a>
+            <a href="#footer"><i class="fa-solid fa-phone"></i>contact</a>
           </li>
           <li>
             <a href="#about_us"
@@ -43,7 +43,7 @@
     <!-- </div> -->
 
     <main>
-      <section class="hero__section section">
+      <section id="hero" class="hero__section section">
         <div class="hero__text">
           <div class="logo__container">
             <img
@@ -68,7 +68,7 @@
             vous et de
             <strong>transformer vos idées en réalité numérique.</strong>
           </p>
-          <button class="show__button">nos services</button>
+          <button role="button"  tabindex="0" class="show__button">nos services</button>
         </div>
         <div class="hero__slider">
           <div class="swiper hero__swiper">
@@ -90,16 +90,91 @@
             <div class="swiper-pagination"></div>
 
             <!-- If we need navigation buttons -->
-            <div class="hero__swiper-button-prev">
+            <div tabindex="1" class="hero__swiper-button-prev">
               <i class="fa-solid fa-caret-left"></i>
             </div>
-            <div class="hero__swiper-button-next">
+            <div tabindex="2" class="hero__swiper-button-next">
               <i class="fa-solid fas fa-caret-right"></i>
             </div>
           </div>
         </div>
       </section>
+      <section class="section services__section">
+        <div class="card">
+          <h2>logiciels</h2>
+          <p><strong>Développement de logiciels :</strong>  Une entreprise de développement peut concevoir, créer et mettre en œuvre des logiciels personnalisés pour répondre aux besoins spécifiques d'une organisation. Cela peut inclure le développement d'applications web, mobiles ou de bureau.
+          </p>
+        </div>
+        <div class="card">
+          <h2>mobiles</h2>
+          <p><strong>Développement d'applications mobiles :</strong> Avec la popularité croissante des smartphones et des tablettes, les entreprises de développement peuvent créer des applications mobiles pour les plateformes iOS et Android. Ces applications peuvent être destinées aux consommateurs ou être utilisées en interne par l'entreprise.
+          </p>
+        </div>
+        <div class="card">
+          <h2>sites web</h2>
+          <p><strong>Développement de sites web :</strong>  Une entreprise de développement peut concevoir et développer des sites web professionnels et attrayants. Cela peut inclure la création de sites vitrines, de boutiques en ligne, de blogs, de portails d'entreprise, etc.
+
+          </p>
+        </div>
+        <div class="card">
+          <h2>commerce électronique</h2>
+          <p><strong>Développement de commerce électronique :</strong>  Si une entreprise souhaite vendre ses produits ou services en ligne, une entreprise de développement peut concevoir et développer une plateforme de commerce électronique adaptée à ses besoins. Cela peut inclure la création de fonctionnalités de panier d'achat, de paiement en ligne sécurisé, de gestion des stocks, etc.
+          </p>
+        </div>
+        <div class="card">
+          <h2>systèmes</h2>
+          <p><strong>Intégration de systèmes :</strong>  Une entreprise de développement peut aider à intégrer différents systèmes logiciels afin de permettre une communication fluide et une synchronisation des données entre eux. Cela peut inclure l'intégration de systèmes de gestion de la relation client (CRM), de systèmes de gestion des ressources humaines (HRM), de systèmes de comptabilité, etc.
+          </p>
+        </div>
+      </section>
     </main>
+    <footer id="footer">
+      <div class="footer__section-one">
+        <img
+          class="logo__white"
+          src="/assets//imgs//LOGO-white.svg"
+          alt="Sodev Logo"
+        />
+        <p>
+          Nous sommes fiers d'être une entreprise dynamique et tournée vers
+          l'avenir, nous nous adaptons en permanence au paysage changeant de
+          l'ère numérique. Notre équipe est composée de développeurs, de
+          designers, de stratèges et de chefs de projet qualifiés qui
+          travaillent en collaboration pour créer des solutions personnalisées
+          adaptées aux besoins uniques de chaque client.
+        </p>
+        <span class="space"></span>
+        <ul>
+          <a href="#hero"><li>home</li></a>
+          <a href="#services"><li>services</li></a>
+        </ul>
+        <!-- <img class="wave__one" src="/assets//imgs//wave1.svg" alt="wave"> -->
+      </div>
+      <div class="footer__section-two">
+        <div class="address">
+          <span
+            ><i class="fa-solid fa-envelope"></i
+            >sodevtherealworld@gmail.com</span
+          >
+          <span
+            ><i class="fa-solid fa-location-dot"></i></i>12 av driss 1er immeuble tanger
+            office centre 2ème étage n°18 tanger</span
+          >
+          <span><i class="fa-solid fa-phone"></i></i>06 61 10 41 86 / 05 39 32 35 28</span>
+     
+        </div>
+        <div class="social-media__links">
+          <a href="www.facebook.com"><i class="fa-brands fa-facebook"></i><span class="tooltip">facebook</span></a>
+          <a href="www.instagram.com"><i class="fa-brands fa-instagram"></i><span class="tooltip">instagram</span></a>
+          <a href="www.twitter.com"><i class="fa-brands fa-twitter"></i><span class="tooltip">twitter</span></a>
+        </div>
+      </div>
+      <div class="dev__team">
+        <span class="copyrights">copyrights ©2023</span>
+        <span class="tag">made with <i class="fa-solid fa-heart"></i> by SODEV team</span>
+
+      </div>
+    </footer>
   </body>
   <!--========== Fontawesome ==========-->
   <script

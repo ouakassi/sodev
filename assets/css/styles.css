@@ -290,7 +290,9 @@ main {
   transition: 0.2s;
 }
 .hero__swiper-button-prev:hover,
-.hero__swiper-button-next:hover {
+.hero__swiper-button-next:hover,
+.hero__swiper-button-prev:focus,
+.hero__swiper-button-next:focus {
   transform: scale(1.2);
   filter: brightness(1.2);
 }
@@ -330,9 +332,184 @@ main {
   transition: 0.2s;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
-.show__button:hover {
+.show__button:hover,
+.show__button:focus {
   color: white;
   background-color: #9b7b2e;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+/*==================== Footer ====================*/
+footer {
+  display: grid;
+  grid-template-columns: 1.6fr 0.4fr;
+  grid-template-rows: 1.8fr 0.2fr;
+  gap: 0px;
+  grid-template-areas:
+    "footer__section-one footer__section-two"
+    "dev__team dev__team";
+  background-color: black;
+}
+.footer__section-one {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  background-color: black;
+  color: var(--container-bg-color);
+  max-height: 30rem;
+}
+
+.logo__white {
+  max-width: 15rem;
+}
+.footer__section-one p {
+  max-width: 60%;
+}
+.footer__section-one ul {
+  position: relative;
+  list-style-type: disc;
+  padding: 2rem;
+  font-size: var(--fs-m);
+  text-transform: uppercase;
+  font-weight: var(--fw-semi-bold);
+}
+.footer__section-one .space {
+  content: "";
+  height: 10rem;
+  width: 2px;
+  border-radius: 20px;
+  background-color: var(--container-bg-color-2);
+}
+.footer__section-one a {
+  color: var(--container-bg-color);
+}
+.footer__section-one li {
+  margin-bottom: 1rem;
+}
+.footer__section-one a:hover {
+  color: white;
+}
+.footer__section-one,
+.footer__section-two {
+  padding: 4rem 5rem;
+}
+.footer__section-two {
+  display: flex;
+  border-radius: 00% 0% 0% 35% / 0% 100% 0% 36%;
+  background-color: var(--container-bg-color);
+}
+
+.footer__section-two {
+  /* padding: 2rem; */
+  display: flex;
+  flex-direction: column;
+}
+
+.wave__one {
+  position: absolute;
+  bottom: 117px;
+  transform: rotate(90deg);
+  max-width: 29rem;
+  right: -18rem;
+}
+/* .footer__section-one::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  background-color: red;
+  width: 4rem;
+ 
+  right: 0;
+} */
+
+.address {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.address span {
+  display: flex;
+  gap: 1rem;
+  /* align-items: center; */
+}
+
+.address i {
+  font-size: var(--fs-l);
+}
+
+.social-media__links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.social-media__links a {
+  position: relative;
+}
+.social-media__links span {
+  width: fit-content;
+  position: absolute;
+  left: -50%;
+  right: 0;
+  top: -5rem;
+  /* margin: 0 auto; */
+  background-color: black;
+  border-radius: 10px;
+  z-index: var(--z-tooltip);
+  padding: 1rem;
+  color: white;
+  display: none;
+  transition: 0.2s;
+}
+.social-media__links i {
+  font-size: var(--fs-xl);
+}
+.social-media__links a:hover span {
+  display: block;
+}
+
+.dev__team {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  grid-area: dev__team;
+  /* width: 100%; */
+  font-weight: var(--fw-medium);
+  font-size: var(--fs-s);
+  /* color: white; */
+  padding: 2rem 10rem;
+
+  /* background-color: var(--container-bg-color-2); */
+}
+
+.dev__team .copyrights {
+  /* padding: 2rem 5rem; */
+  color: var(--container-bg-color-2);
+  text-transform: capitalize;
+  /* color: white; */
+  /* width: 40%; */
+}
+
+.dev__team .tag {
+  /* padding: 2rem 5rem; */
+  text-transform: capitalize;
+  color: white;
+  /* width: 50%; */
+  /* text-align: right; */
+  /* border-radius: 66% 10% 10% 10% / 100% 0% 0% 0%; */
+  /* clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%); */
+  /* background-color: var(--container-bg-color); */
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px -3px 7px 0px; */
+}
+
+.dev__team i {
+  color: red;
 }
