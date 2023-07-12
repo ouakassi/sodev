@@ -1,15 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sodev Website</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;900&display=swap"
-      rel="stylesheet"
-    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
@@ -68,7 +64,7 @@
             vous et de
             <strong>transformer vos idées en réalité numérique.</strong>
           </p>
-          <button role="button"  tabindex="0" class="show__button">nos services</button>
+          <a href="#footer" role="button"  tabindex="0" class="show__button">contactez nous</a>
         </div>
         <div class="hero__slider">
           <div class="swiper hero__swiper">
@@ -99,37 +95,64 @@
           </div>
         </div>
       </section>
-      <section class="section services__section">
+      <section id="services" class="section services__section">
+        <!-- <select id="langselector" onchange="loadlang()">
+          <option value="en">English</option>
+          <option value="fr">French</option>
+        </select>
         <div>
-          <button class="button__fr">FR</button>
-          <button class="button__eng">ENG</button>
+          <button class="translate" id="fr">FR</button>
+          <button class="translate" id="en">ENG</button>
+        </div> -->
+        <div class="heading">
+          <h1>services</h1>
+          <h3>what we offer</h3>
+          <p>we can help you solve your problem through our service</p>
         </div>
-        <div class="card">
-          <h2 class="title">logiciels</h2>
-          <p><strong>Développement de logiciels :</strong>  Une entreprise de développement peut concevoir, créer et mettre en œuvre des logiciels personnalisés pour répondre aux besoins spécifiques d'une organisation. Cela peut inclure le développement d'applications web, mobiles ou de bureau.
-          </p>
+        <div class="cards">
+          <div  class="card">
+            <img src="assets/imgs/services1/app-development.png" alt="Développement de logiciels">
+            <h2 class="lang" key="services-logiciels-heading">Développement de logiciels</h2>
+            <p class="lang" key="content">Nous concevons, créons et mettons en œuvre des solutions logicielles personnalisées pour les applications web, mobiles et de bureau.
+            </p>
+          </div>
+          <div  class="card">
+            <img src="assets/imgs/services1/mobile-dev.png" alt="Développement des applications">
+          
+            <h2 class="lang" key="heading">Applications mobiles</h2>
+            <p class="lang" key="content"> Nous créons des applications mobiles pour iOS et Android, destinées au grand public ou utilisées en interne par votre organisation.
+            </p>
+          </div>
+          <div  class="card">
+            <img src="assets/imgs/services1//landing-page.png" alt="Développement de logiciels">
+          
+            <h2>Développement de sites web</h2>
+            <p>Nous concevons et développons des sites web professionnels, incluant des vitrines, des plateformes de commerce électronique, des blogs et des portails d'entreprise.
+            </p>
+          </div>
+          <div  class="card">
+            <img src="assets/imgs/services1/ecommerce.png" alt="Développement de logiciels">
+          
+            <h2>e-commerce électronique</h2>
+            <p>Nous concevons et développons des plateformes de commerce électronique personnalisées, avec des fonctionnalités telles que les paniers d'achat, les paiements en ligne sécurisés et la gestion des stocks.
+            </p>
+          </div>
+          <div  class="card">
+            <img src="assets/imgs/services1/crm.png" alt="Développement de logiciels">
+          
+            <h2>Intégration de systèmes</h2>
+            <p>Nous assurons l'intégration de différents systèmes logiciels, tels que les CRM, les GRH et les systèmes de comptabilité, pour une communication fluide et une synchronisation des données.
+            </p>
+          </div>
+          <div  class="card">
+            <img src="assets/imgs/services1/ui-design.png" alt="Développement de logiciels">
+          
+            <h2>Conception UX/UI</h2>
+            <p>Nous offrons également des services de conception d'expérience utilisateur (UX) et d'interface utilisateur (UI), garantissant des interfaces intuitives, esthétiques et conviviales pour vos applications et sites web.
+            </p>
+          </div>
         </div>
-        <div class="card">
-          <h2>mobiles</h2>
-          <p><strong>Développement d'applications mobiles :</strong> Avec la popularité croissante des smartphones et des tablettes, les entreprises de développement peuvent créer des applications mobiles pour les plateformes iOS et Android. Ces applications peuvent être destinées aux consommateurs ou être utilisées en interne par l'entreprise.
-          </p>
-        </div>
-        <div class="card">
-          <h2>sites web</h2>
-          <p><strong>Développement de sites web :</strong>  Une entreprise de développement peut concevoir et développer des sites web professionnels et attrayants. Cela peut inclure la création de sites vitrines, de boutiques en ligne, de blogs, de portails d'entreprise, etc.
 
-          </p>
-        </div>
-        <div class="card">
-          <h2>commerce électronique</h2>
-          <p><strong>Développement de commerce électronique :</strong>  Si une entreprise souhaite vendre ses produits ou services en ligne, une entreprise de développement peut concevoir et développer une plateforme de commerce électronique adaptée à ses besoins. Cela peut inclure la création de fonctionnalités de panier d'achat, de paiement en ligne sécurisé, de gestion des stocks, etc.
-          </p>
-        </div>
-        <div class="card">
-          <h2>systèmes</h2>
-          <p><strong>Intégration de systèmes :</strong>  Une entreprise de développement peut aider à intégrer différents systèmes logiciels afin de permettre une communication fluide et une synchronisation des données entre eux. Cela peut inclure l'intégration de systèmes de gestion de la relation client (CRM), de systèmes de gestion des ressources humaines (HRM), de systèmes de comptabilité, etc.
-          </p>
-        </div>
       </section>
     </main>
     <footer id="footer">
@@ -188,5 +211,5 @@
   <!--========== Swiper ==========-->
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <!--========== Main Js ==========-->
-  <script src="assets//javascript/script.js"></script>
+  <script type="module" src="assets//javascript/script.js"></script>
 </html>

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;900&family=Poppins:wght@800&family=Rubik:wght@300;400;500;700;800&display=swap");
+
 :root {
   --header-height: 6rem;
 
@@ -29,6 +31,7 @@
   --font-1: "Barlow", sans-serif;
   --font-2: "Kanit", sans-serif;
   --font-3: "Poppins", sans-serif;
+  --font-4: "Rubik", sans-serif;
 
   --fs-4xl: 5.6rem;
   --fs-3xl: 4.6rem;
@@ -87,6 +90,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
 
 body {
@@ -247,6 +251,7 @@ main {
   position: relative;
   gap: 2rem;
   align-items: center;
+  overflow: hidden;
 }
 .hero__text {
   width: 40%;
@@ -257,6 +262,10 @@ main {
   font-weight: var(--fw-super-bold);
   font-size: var(--fs-3xl);
   text-transform: uppercase;
+  background: #9b7b2e;
+  background: linear-gradient(to right, #ad7c08 40%, #e2a20b 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .hero__slider {
   width: 60%;
@@ -338,6 +347,83 @@ main {
   background-color: #9b7b2e;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+/*==================== services ====================*/
+
+.services__section {
+}
+.services__section .heading {
+  text-align: center;
+  margin: 4rem auto;
+}
+
+.services__section .heading h1 {
+  font-size: var(--fs-3xl);
+  text-transform: uppercase;
+  font-family: var(--font-3);
+  background: #9b7b2e;
+  background: linear-gradient(to right, #ad7c08 40%, #e2a20b 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.cards {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  margin: 5rem auto;
+}
+
+.card {
+  /* border: 1px solid var(--container-bg-color-2); */
+
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 45rem;
+  min-height: 40rem;
+  padding: 2rem;
+  /* margin-bottom: 10rem; */
+  border-radius: 15px;
+  box-shadow: rgba(156, 123, 46, 0.4) 0px 0px 0px 2px,
+    rgba(156, 123, 46, 0.3) 6px 6px, rgba(156, 123, 46, 0.2) 11px 12px;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-duration: 0.2s;
+}
+.card:hover,
+.card:focus {
+  box-shadow: rgba(156, 123, 46, 1) 0px 0px 0px 2px,
+    rgba(156, 123, 46, 0.3) 8px 8px, rgba(156, 123, 46, 0.2) 14px 14px;
+}
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.card img {
+  width: 12rem;
+  padding: 1rem;
+  /* background-color: rgb(155 123 46 / 15%); */
+  border-radius: 20%;
+  transition-duration: 0.2s;
+  overflow: hidden;
+}
+.card h2 {
+  text-transform: uppercase;
+  font-family: var(--font-4);
+  color: #c78501;
+  color: var(--container-bg-color-2);
+
+  font-weight: var(--fw-normal);
+}
+.card p {
+  padding: 2rem;
+  /* background-color: rgba(255, 179, 1, 0.05); */
+  /* backdrop-filter: blur(6px); */
+  border-radius: 10px;
 }
 
 /*==================== Footer ====================*/
