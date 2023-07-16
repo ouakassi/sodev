@@ -628,17 +628,19 @@ main {
   padding: 2rem;
   display: flex;
   flex-direction: column;
+
+  box-shadow: rgba(104, 86, 3, 0.5) 15px 25px 25px -20px;
   /* justify-content: center; */
   /* align-items: center; */
 }
 .contact__box i {
-  border: 1px solid var(--container-bg-color-2);
+  border: 2px solid var(--container-bg-color-2);
   width: fit-content;
   border-radius: inherit;
   padding: 1rem;
   margin-bottom: 3rem;
   font-size: var(--fs-xl);
-  color: #102d59;
+  color: rgb(16, 45, 89);
 }
 .contact__box h3 {
   margin-bottom: 2rem;
@@ -654,6 +656,9 @@ main {
 .contact__box a {
   font-weight: var(--fw-bold);
   text-decoration: underline;
+  padding-bottom: 1rem;
+  text-decoration-style: wavy;
+  text-decoration-color: var(--container-bg-color-2);
 }
 
 /*==================== Footer ====================*/
