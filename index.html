@@ -15,6 +15,11 @@
   <body>
     <!-- <div class="header__wrap"> -->
     <header>
+      <!-- <img
+        class="nav__logo"
+        src="assets/imgs/LOGO-black.svg"
+        alt="sodev-logo"
+      /> -->
       <nav>
         <ul>
           <li>
@@ -44,7 +49,7 @@
           <div class="logo__container">
             <img
               class="logo"
-              src="assets//imgs//LOGO-black.svg"
+              src="assets/imgs/LOGO-black.svg"
               alt="sodev-logo"
             />
             <span>creativity & services</span>
@@ -64,7 +69,9 @@
             vous et de
             <strong>transformer vos idées en réalité numérique.</strong>
           </p>
-          <a href="#footer" role="button"  tabindex="0" class="show__button">contactez nous</a>
+          <a href="#footer" role="button" tabindex="0" class="show__button"
+            >contactez nous</a
+          >
         </div>
         <div class="hero__slider">
           <div class="swiper hero__swiper">
@@ -104,102 +111,395 @@
           <button class="translate" id="fr">FR</button>
           <button class="translate" id="en">ENG</button>
         </div> -->
-        <div class="heading">
-          <h1>services</h1>
-          <h3>what we offer</h3>
-          <p>we can help you solve your problem through our service</p>
+        <div class="section__heading">
+          <h1><i class="fa-solid fa-briefcase"></i>nos services</h1>
+          <h3>what we offer ?</h3>
         </div>
         <div class="cards">
-          <div  class="card">
-            <img src="assets/imgs/services1/app-development.png" alt="Développement de logiciels">
-            <h2 class="lang" key="services-logiciels-heading">Développement de logiciels</h2>
-            <p class="lang" key="content">Nous concevons, créons et mettons en œuvre des solutions logicielles personnalisées pour les applications web, mobiles et de bureau.
+          <div class="card">
+            <img
+              src="assets/imgs/services1/app-development.png"
+              alt="Développement de logiciels"
+            />
+            <h2 class="lang" key="services-logiciels-heading">
+              Développement de logiciels
+            </h2>
+            <p class="lang" key="content">
+              Nous concevons, créons et mettons en œuvre des solutions
+              logicielles personnalisées pour les applications web, mobiles et
+              de bureau.
             </p>
           </div>
-          <div  class="card">
-            <img src="assets/imgs/services1/mobile-dev.png" alt="Développement des applications">
-          
+          <div class="card">
+            <img
+              src="assets/imgs/services1/mobile-dev.png"
+              alt="Développement des applications"
+            />
+
             <h2 class="lang" key="heading">Applications mobiles</h2>
-            <p class="lang" key="content"> Nous créons des applications mobiles pour iOS et Android, destinées au grand public ou utilisées en interne par votre organisation.
+            <p class="lang" key="content">
+              Nous créons des applications mobiles pour iOS et Android,
+              destinées au grand public ou utilisées en interne par votre
+              organisation.
             </p>
           </div>
-          <div  class="card">
-            <img src="assets/imgs/services1//landing-page.png" alt="Développement de logiciels">
-          
+          <div class="card">
+            <img
+              src="assets/imgs/services1//landing-page.png"
+              alt="Développement de logiciels"
+            />
+
             <h2>Développement de sites web</h2>
-            <p>Nous concevons et développons des sites web professionnels, incluant des vitrines, des plateformes de commerce électronique, des blogs et des portails d'entreprise.
+            <p>
+              Nous concevons et développons des sites web professionnels,
+              incluant des vitrines, des plateformes de commerce électronique,
+              des blogs et des portails d'entreprise.
             </p>
           </div>
-          <div  class="card">
-            <img src="assets/imgs/services1/ecommerce.png" alt="Développement de logiciels">
-          
+          <div class="card">
+            <img
+              src="assets/imgs/services1/ecommerce.png"
+              alt="Développement de logiciels"
+            />
+
             <h2>e-commerce électronique</h2>
-            <p>Nous concevons et développons des plateformes de commerce électronique personnalisées, avec des fonctionnalités telles que les paniers d'achat, les paiements en ligne sécurisés et la gestion des stocks.
+            <p>
+              Nous concevons et développons des plateformes de commerce
+              électronique personnalisées, avec des fonctionnalités telles que
+              les paniers d'achat, les paiements en ligne sécurisés et la
+              gestion des stocks.
             </p>
           </div>
-          <div  class="card">
-            <img src="assets/imgs/services1/crm.png" alt="Développement de logiciels">
-          
+          <div class="card">
+            <img
+              src="assets/imgs/services1/crm.png"
+              alt="Développement de logiciels"
+            />
+
             <h2>Intégration de systèmes</h2>
-            <p>Nous assurons l'intégration de différents systèmes logiciels, tels que les CRM, les GRH et les systèmes de comptabilité, pour une communication fluide et une synchronisation des données.
+            <p>
+              Nous assurons l'intégration de différents systèmes logiciels, tels
+              que les CRM, les GRH et les systèmes de comptabilité, pour une
+              communication fluide et une synchronisation des données.
             </p>
           </div>
-          <div  class="card">
-            <img src="assets/imgs/services1/ui-design.png" alt="Développement de logiciels">
-          
+          <div class="card">
+            <img
+              src="assets/imgs/services1/ui-design.png"
+              alt="Développement de logiciels"
+            />
+
             <h2>Conception UX/UI</h2>
-            <p>Nous offrons également des services de conception d'expérience utilisateur (UX) et d'interface utilisateur (UI), garantissant des interfaces intuitives, esthétiques et conviviales pour vos applications et sites web.
+            <p>
+              Nous offrons également des services de conception d'expérience
+              utilisateur (UX) et d'interface utilisateur (UI), garantissant des
+              interfaces intuitives, esthétiques et conviviales pour vos
+              applications et sites web.
             </p>
           </div>
         </div>
+      </section>
+      <section class="steps__section section">
+        <div class="steps__wave">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path
+              fill="#000"
+              fill-opacity="1"
+              d="M0,224L120,192C240,160,480,96,720,101.3C960,107,1200,181,1320,218.7L1440,256L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
+            ></path>
+          </svg>
+        </div>
+        <div class="section__wrapper">
+          <div class="section__heading">
+            <h1><i class="fa-solid fa-pen-nib"></i>our process</h1>
+            <h3>how the process get trough ?</h3>
+          </div>
+          <div class="steps">
+            <div class="step__card">
+              <img
+                class="steps__icon"
+                src="/assets//imgs/steps/consultation.png"
+                alt=""
+              />
+              <h3>Discovery and Consultation:</h3>
+              <ul class="steps__text">
+                <li>
+                  We begin by engaging in detailed discussions with our clients
+                  to understand their goals, requirements, and vision.
+                </li>
+                <li>
+                  We conduct a thorough analysis of their target audience,
+                  industry trends, and competitors.
+                </li>
+              </ul>
+              <span class="step__number">1</span>
+            </div>
+            <div class="arrow">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="step__card">
+              <img
+                class="steps__icon"
+                src="/assets/imgs/steps/planning.png"
+                alt="planning"
+              />
+              <h3>Strategy and Planning:</h3>
+              <ul class="steps__text">
+                <li>
+                  Based on the information gathered, we develop a comprehensive
+                  strategy tailored to meet the client's objectives.
+                </li>
+                <li>
+                  We create a project roadmap outlining key milestones,
+                  deliverables, and timelines.
+                </li>
+              </ul>
+              <span class="step__number">2</span>
+            </div>
+            <div class="arrow">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="step__card">
+              <img
+                class="steps__icon"
+                src="/assets/imgs/steps/design.png"
+                alt="design"
+              />
+              <h3>Design and Conceptualization:</h3>
+              <ul class="steps__text">
+                <li>
+                  Our talented designers collaborate closely with the client to
+                  create visually appealing and user-centric design concepts.
+                </li>
+                <li>
+                  We focus on creating intuitive user experiences that align
+                  with the client's brand identity.
+                </li>
+              </ul>
+              <span class="step__number">3</span>
+            </div>
+            <div class="arrow">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="step__card">
+              <img
+                class="steps__icon"
+                src="/assets/imgs/steps/development.png"
+                alt="development"
+              />
+              <h3>Development and Implementation:</h3>
 
+              <ul class="steps__text">
+                <li>
+                  Our skilled developers bring the design concepts to life,
+                  utilizing the latest technologies and industry best practices.
+                </li>
+                <li>
+                  We ensure seamless functionality, mobile responsiveness, and
+                  cross-browser compatibility.
+                </li>
+              </ul>
+              <span class="step__number">4</span>
+            </div>
+            <div class="arrow">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="step__card">
+              <img
+                class="steps__icon"
+                src="/assets/imgs/steps/testing.png"
+                alt="testing"
+              />
+              <h3>Testing and Quality Assurance:</h3>
+
+              <ul class="steps__text">
+                <li>
+                  We rigorously test the developed solutions to identify and
+                  resolve any bugs, usability issues, or performance concerns.
+                </li>
+                <li>
+                  Quality assurance processes are implemented to ensure the
+                  final product meets the highest standards.
+                </li>
+              </ul>
+              <span class="step__number">5</span>
+            </div>
+            <div class="arrow">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="step__card">
+              <img
+                class="steps__icon"
+                src="/assets/imgs/steps/deployment.png"
+                alt="deployment"
+              />
+              <h3>Launch and Deployment:</h3>
+
+              <ul class="steps__text">
+                <li>
+                  Once the client approves the final product, we assist in
+                  deploying it to the desired platforms or servers.
+                </li>
+                <li>
+                  We ensure a smooth transition and provide any necessary
+                  training or support during the launch phase.
+                </li>
+              </ul>
+              <span class="step__number">6</span>
+            </div>
+            <div class="arrow">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="step__card">
+              <img
+                class="steps__icon"
+                src="/assets/imgs/steps/maintenance.png"
+                alt="maintenance"
+              />
+              <h3>Support and Maintenance:</h3>
+
+              <ul class="steps__text">
+                <li>
+                  Our commitment extends beyond the launch. We offer ongoing
+                  support, maintenance, and updates to ensure the product's
+                  optimal performance.
+                </li>
+                <li>
+                  We monitor analytics and user feedback to identify areas for
+                  improvement and implement necessary enhancements.
+                </li>
+              </ul>
+              <span class="step__number">7</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section contact__section">
+        <div class="section__heading">
+          <h1><i class="fa-solid fa-phone"></i>contact us</h1>
+          <h3>let us know how we can help</h3>
+        </div>
+        <div class="contact__wrapper">
+          <div class="contact__box">
+            <i class="fa-solid fa-envelope"></i>
+            <h3>send us an email</h3>
+            <p>speak to our frendiely team.</p>
+            <a href="">sodevtherealworld@gmail.com</a>
+          </div>
+          <div class="contact__box">
+            <i class="fa-solid fa-location-dot"></i>
+            <h3>visit us</h3>
+            <p>visit our office and disscuss</p>
+            <a href=""
+              >12 av driss 1er immeuble tanger office centre 2ème étage n°18
+              tanger</a
+            >
+          </div>
+          <div class="contact__box">
+            <i class="fa-solid fa-envelope"></i>
+            <h3>call us</h3>
+            <p>give us a call and discovr our plans</p>
+            <span>06 61 10 41 86</span>
+            <span>05 39 32 3528</span>
+          </div>
+        </div>
       </section>
     </main>
     <footer id="footer">
-      <div class="footer__section-one">
-        <img
-          class="logo__white"
-          src="assets//imgs//LOGO-white.svg"
-          alt="Sodev Logo"
-        />
-        <p>
-          Nous sommes fiers d'être une entreprise dynamique et tournée vers
-          l'avenir, nous nous adaptons en permanence au paysage changeant de
-          l'ère numérique. Notre équipe est composée de développeurs, de
-          designers, de stratèges et de chefs de projet qualifiés qui
-          travaillent en collaboration pour créer des solutions personnalisées
-          adaptées aux besoins uniques de chaque client.
-        </p>
-        <span class="space"></span>
-        <ul>
-          <a href="#hero"><li>home</li></a>
-          <a href="#services"><li>services</li></a>
-        </ul>
-        <!-- <img class="wave__one" src="/assets//imgs//wave1.svg" alt="wave"> -->
+      <div class="wave__container">
+        <svg
+          class="wave__one"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+        >
+          <path
+            fill="#9b7b2e"
+            fill-opacity="1"
+            d="M0,224L80,240C160,256,320,288,480,272C640,256,800,192,960,144C1120,96,1280,64,1360,48L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+          ></path>
+        </svg>
+        <svg
+          class="wave__two"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+        >
+          <path
+            fill="#000000"
+            fill-opacity="1"
+            d="M0,192L80,170.7C160,149,320,107,480,117.3C640,128,800,192,960,208C1120,224,1280,192,1360,176L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+          ></path>
+        </svg>
       </div>
-      <div class="footer__section-two">
-        <div class="address">
-          <span
-            ><i class="fa-solid fa-envelope"></i
-            >sodevtherealworld@gmail.com</span
-          >
-          <span
-            ><i class="fa-solid fa-location-dot"></i></i>12 av driss 1er immeuble tanger
-            office centre 2ème étage n°18 tanger</span
-          >
-          <span><i class="fa-solid fa-phone"></i></i>06 61 10 41 86 / 05 39 32 35 28</span>
-     
+      <div class="footer__wrapper">
+        <div class="footer__section-one">
+          <img
+            class="logo__white"
+            src="assets//imgs//LOGO-white.svg"
+            alt="Sodev Logo"
+          />
+          <p>
+            Nous sommes fiers d'être une entreprise dynamique et tournée vers
+            l'avenir, nous nous adaptons en permanence au paysage changeant de
+            l'ère numérique. Notre équipe est composée de développeurs, de
+            designers, de stratèges et de chefs de projet qualifiés qui
+            travaillent en collaboration pour créer des solutions personnalisées
+            adaptées aux besoins uniques de chaque client.
+          </p>
+          <span class="space"></span>
+          <ul>
+            <a href="#hero"><li>home</li></a>
+            <a href="#services"><li>services</li></a>
+          </ul>
+          <!-- <img class="wave__one" src="/assets//imgs//wave1.svg" alt="wave"> -->
         </div>
-        <div class="social-media__links">
-          <a href="www.facebook.com"><i class="fa-brands fa-facebook"></i><span class="tooltip">facebook</span></a>
-          <a href="www.instagram.com"><i class="fa-brands fa-instagram"></i><span class="tooltip">instagram</span></a>
-          <a href="www.twitter.com"><i class="fa-brands fa-twitter"></i><span class="tooltip">twitter</span></a>
+        <div class="footer__section-two">
+          <div class="address">
+            <span
+              ><i class="fa-solid fa-envelope"></i
+              >sodevtherealworld@gmail.com</span
+            >
+            <span
+              ><i class="fa-solid fa-location-dot"></i>12 av driss 1er immeuble
+              tanger office centre 2ème étage n°18 tanger</span
+            >
+            <span
+              ><i class="fa-solid fa-phone"></i>06 61 10 41 86 / 05 39 32 35
+              28</span
+            >
+          </div>
+          <div class="social-media__links">
+            <a href="www.facebook.com"
+              ><i class="fa-brands fa-facebook"></i
+              ><span class="tooltip">facebook</span></a
+            >
+            <a href="www.instagram.com"
+              ><i class="fa-brands fa-instagram"></i
+              ><span class="tooltip">instagram</span></a
+            >
+            <a href="www.twitter.com"
+              ><i class="fa-brands fa-twitter"></i
+              ><span class="tooltip">twitter</span></a
+            >
+          </div>
         </div>
-      </div>
-      <div class="dev__team">
-        <span class="copyrights">copyrights ©2023</span>
-        <span class="tag">made with <i class="fa-solid fa-heart"></i> by SODEV team</span>
-
+        <div class="dev__team">
+          <span class="copyrights">copyrights ©2023</span>
+          <span class="tag"
+            >made with <i class="fa-solid fa-heart"></i> by SODEV team</span
+          >
+        </div>
       </div>
     </footer>
   </body>
