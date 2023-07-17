@@ -385,7 +385,19 @@ main {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
-
+.to__top {
+  position: fixed;
+  display: none;
+  bottom: 50px;
+  right: 50px;
+  transition: 0.5s;
+}
+.to__top a {
+  padding: 1rem 1.5rem;
+  color: #fff;
+  background-color: var(--container-bg-color-2);
+  border-radius: 10px;
+}
 /*==================== services ====================*/
 
 .services__section {
@@ -418,7 +430,7 @@ main {
 }
 
 .section__heading i {
-  margin-right: 1rem;
+  margin-right: 2rem;
 }
 .section__heading h3 {
   font-weight: var(--fw-bold);

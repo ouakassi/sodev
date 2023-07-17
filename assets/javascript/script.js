@@ -26,7 +26,20 @@ const swiper = new Swiper(".hero__swiper", {
   // },
 });
 
-// --------------------------- //
+// ------------------ to top button --------- //
+
+const toTopElement = document.querySelector(".to__top");
+
+console.log(window.scrollY);
+window.addEventListener("scroll", () => {
+  window.scrollY > 100
+    ? (toTopElement.style.display = "block")
+    : (toTopElement.style.display = "none");
+});
+
+console.log(window.innerHeight);
+
+// ----------- multi languages funcion ---------------- //
 
 const translateLang = (lang) => {
   // Select all elements with the class "lang"

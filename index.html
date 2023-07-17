@@ -11,6 +11,11 @@
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+    <script
+      type="text/javascript"
+      src="assets/javascript/script.js"
+      async
+    ></script>
   </head>
   <body>
     <!-- <div class="header__wrap"> -->
@@ -23,7 +28,7 @@
       <nav>
         <ul>
           <li>
-            <a href="#hero"><i class="fa-solid fa-house"></i>home</a>
+            <a href="#hero"><i class="fa-solid fa-house"></i>accueil</a>
           </li>
           <li>
             <a href="#services"
@@ -31,12 +36,10 @@
             >
           </li>
           <li>
-            <a href="#footer"><i class="fa-solid fa-phone"></i>contact</a>
+            <a href="#steps"><i class="fa-solid fa-pen-nib"></i>processus</a>
           </li>
           <li>
-            <a href="#about_us"
-              ><i class="fa-solid fa-address-card"></i>about us</a
-            >
+            <a href="#contact"><i class="fa-solid fa-phone"></i>contact</a>
           </li>
         </ul>
       </nav>
@@ -44,7 +47,7 @@
     <!-- </div> -->
 
     <main>
-      <section id="hero" class="hero__section section">
+      <section id="hero" class="section hero__section">
         <div class="hero__text">
           <div class="logo__container">
             <img
@@ -55,7 +58,7 @@
             <span>creativity & services</span>
           </div>
 
-          <h1>web development</h1>
+          <h1>welcome to the real world</h1>
           <p>
             <strong>Bienvenue sur notre site de développement !</strong> Nous
             sommes une équipe passionnée de professionnels du développement
@@ -113,7 +116,7 @@
         </div> -->
         <div class="section__heading">
           <h1><i class="fa-solid fa-briefcase"></i>nos services</h1>
-          <h3>what we offer ?</h3>
+          <h3>Qu'est-ce que nous offrons ?</h3>
         </div>
         <div class="cards">
           <div class="card">
@@ -199,7 +202,7 @@
           </div>
         </div>
       </section>
-      <section class="steps__section section">
+      <section id="steps" class="section steps__section">
         <div class="steps__wave">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path
@@ -211,25 +214,25 @@
         </div>
         <div class="section__wrapper">
           <div class="section__heading">
-            <h1><i class="fa-solid fa-pen-nib"></i>our process</h1>
-            <h3>how the process get trough ?</h3>
+            <h1><i class="fa-solid fa-pen-nib"></i>Notre processus</h1>
+            <h3>Comment le processus se déroule-t-il ?</h3>
           </div>
           <div class="steps">
             <div class="step__card">
               <img
                 class="steps__icon"
-                src="/assets//imgs/steps/consultation.png"
+                src="assets//imgs/steps/consultation.png"
                 alt=""
               />
-              <h3>Discovery and Consultation:</h3>
+              <h3>Découverte et Consultation :</h3>
               <ul class="steps__text">
                 <li>
-                  We begin by engaging in detailed discussions with our clients
-                  to understand their goals, requirements, and vision.
+                  Nous entamons des discussions détaillées avec nos clients pour
+                  comprendre leurs objectifs, leurs exigences et leur vision.
                 </li>
                 <li>
-                  We conduct a thorough analysis of their target audience,
-                  industry trends, and competitors.
+                  Nous réalisons une analyse approfondie de leur public cible,
+                  des tendances de l'industrie et de leurs concurrents.
                 </li>
               </ul>
               <span class="step__number">1</span>
@@ -239,21 +242,23 @@
               <span></span>
               <span></span>
             </div>
+
             <div class="step__card">
               <img
                 class="steps__icon"
-                src="/assets/imgs/steps/planning.png"
+                src="assets/imgs/steps/planning.png"
                 alt="planning"
               />
-              <h3>Strategy and Planning:</h3>
+              <h3>Stratégie et Planification :</h3>
               <ul class="steps__text">
                 <li>
-                  Based on the information gathered, we develop a comprehensive
-                  strategy tailored to meet the client's objectives.
+                  En nous basant sur les informations recueillies, nous
+                  élaborons une stratégie complète adaptée aux objectifs du
+                  client.
                 </li>
                 <li>
-                  We create a project roadmap outlining key milestones,
-                  deliverables, and timelines.
+                  Nous créons une feuille de route du projet, détaillant les
+                  étapes clés, les livrables et les délais.
                 </li>
               </ul>
               <span class="step__number">2</span>
@@ -263,21 +268,24 @@
               <span></span>
               <span></span>
             </div>
+
             <div class="step__card">
               <img
                 class="steps__icon"
-                src="/assets/imgs/steps/design.png"
+                src="assets/imgs/steps/design.png"
                 alt="design"
               />
-              <h3>Design and Conceptualization:</h3>
+              <h3>Conception et Conceptualisation :</h3>
               <ul class="steps__text">
                 <li>
-                  Our talented designers collaborate closely with the client to
-                  create visually appealing and user-centric design concepts.
+                  Nos talentueux designers collaborent étroitement avec le
+                  client pour créer des concepts de design attrayants et centrés
+                  sur l'utilisateur.
                 </li>
                 <li>
-                  We focus on creating intuitive user experiences that align
-                  with the client's brand identity.
+                  Nous nous concentrons sur la création d'expériences
+                  utilisateur intuitives qui correspondent à l'identité de
+                  marque du client.
                 </li>
               </ul>
               <span class="step__number">3</span>
@@ -290,19 +298,19 @@
             <div class="step__card">
               <img
                 class="steps__icon"
-                src="/assets/imgs/steps/development.png"
+                src="assets/imgs/steps/development.png"
                 alt="development"
               />
-              <h3>Development and Implementation:</h3>
-
+              <h3>Développement et Mise en œuvre :</h3>
               <ul class="steps__text">
                 <li>
-                  Our skilled developers bring the design concepts to life,
-                  utilizing the latest technologies and industry best practices.
+                  Nos développeurs qualifiés donnent vie aux concepts de design
+                  en utilisant les dernières technologies et les meilleures
+                  pratiques de l'industrie.
                 </li>
                 <li>
-                  We ensure seamless functionality, mobile responsiveness, and
-                  cross-browser compatibility.
+                  Nous assurons une fonctionnalité fluide, une compatibilité
+                  mobile et une compatibilité avec tous les navigateurs.
                 </li>
               </ul>
               <span class="step__number">4</span>
@@ -312,22 +320,24 @@
               <span></span>
               <span></span>
             </div>
+
             <div class="step__card">
               <img
                 class="steps__icon"
-                src="/assets/imgs/steps/testing.png"
+                src="assets/imgs/steps/testing.png"
                 alt="testing"
               />
-              <h3>Testing and Quality Assurance:</h3>
-
+              <h3>Tests et Assurance Qualité :</h3>
               <ul class="steps__text">
                 <li>
-                  We rigorously test the developed solutions to identify and
-                  resolve any bugs, usability issues, or performance concerns.
+                  Nous effectuons des tests rigoureux sur les solutions
+                  développées afin d'identifier et de résoudre tout
+                  dysfonctionnement, problème d'utilisabilité ou de performance.
                 </li>
                 <li>
-                  Quality assurance processes are implemented to ensure the
-                  final product meets the highest standards.
+                  Des processus d'assurance qualité sont mis en œuvre pour
+                  garantir que le produit final répond aux normes les plus
+                  élevées.
                 </li>
               </ul>
               <span class="step__number">5</span>
@@ -340,19 +350,19 @@
             <div class="step__card">
               <img
                 class="steps__icon"
-                src="/assets/imgs/steps/deployment.png"
+                src="assets/imgs/steps/deployment.png"
                 alt="deployment"
               />
-              <h3>Launch and Deployment:</h3>
-
+              <h3>Lancement et Déploiement :</h3>
               <ul class="steps__text">
                 <li>
-                  Once the client approves the final product, we assist in
-                  deploying it to the desired platforms or servers.
+                  Une fois que le client approuve le produit final, nous
+                  l'aidons à le déployer sur les plateformes ou serveurs
+                  souhaités.
                 </li>
                 <li>
-                  We ensure a smooth transition and provide any necessary
-                  training or support during the launch phase.
+                  Nous assurons une transition fluide et fournissons toute
+                  formation ou support nécessaire pendant la phase de lancement.
                 </li>
               </ul>
               <span class="step__number">6</span>
@@ -362,23 +372,24 @@
               <span></span>
               <span></span>
             </div>
+
             <div class="step__card">
               <img
                 class="steps__icon"
-                src="/assets/imgs/steps/maintenance.png"
+                src="assets/imgs/steps/maintenance.png"
                 alt="maintenance"
               />
-              <h3>Support and Maintenance:</h3>
-
+              <h3>Assistance et Maintenance :</h3>
               <ul class="steps__text">
                 <li>
-                  Our commitment extends beyond the launch. We offer ongoing
-                  support, maintenance, and updates to ensure the product's
-                  optimal performance.
+                  Notre engagement va au-delà du lancement. Nous offrons un
+                  support continu, une maintenance et des mises à jour pour
+                  assurer des performances optimales du produit.
                 </li>
                 <li>
-                  We monitor analytics and user feedback to identify areas for
-                  improvement and implement necessary enhancements.
+                  Nous surveillons les analyses et les retours des utilisateurs
+                  pour identifier les domaines d'amélioration et mettre en œuvre
+                  les améliorations nécessaires.
                 </li>
               </ul>
               <span class="step__number">7</span>
@@ -386,32 +397,37 @@
           </div>
         </div>
       </section>
-      <section class="section contact__section">
+      <section id="contact" class="section contact__section">
         <div class="section__heading">
-          <h1><i class="fa-solid fa-phone"></i>contact us</h1>
-          <h3>let us know how we can help</h3>
+          <h1><i class="fa-solid fa-phone"></i>CONTACTEZ-NOUS</h1>
+          <h3>Faites-nous savoir comment nous pouvons vous aider.</h3>
         </div>
+
         <div class="contact__wrapper">
           <div class="contact__box">
             <i class="fa-solid fa-envelope"></i>
-            <h3>send us an email</h3>
-            <p>speak to our frendiely team.</p>
-            <a href="">sodevtherealworld@gmail.com</a>
-          </div>
-          <div class="contact__box">
-            <i class="fa-solid fa-location-dot"></i>
-            <h3>visit us</h3>
-            <p>visit our office to disscuss</p>
-            <a href=""
-              >12 av driss 1er immeuble tanger office centre 2ème étage n°18
-              tanger</a
+            <h3>Envoyez-nous un e-mail</h3>
+            <p>Communiquez avec notre équipe bienveillante.</p>
+            <a href="mailto:admin@sodevtherealworld.com"
+              >admin@sodevtherealworld.com</a
             >
           </div>
           <div class="contact__box">
-            <i class="fa-solid fa-envelope"></i>
-            <h3>call us</h3>
-            <p>give us a call and discovr our plans</p>
-            <span>(+212) 06 61 10 41 86</span>
+            <i class="fa-solid fa-location-dot"></i>
+            <h3>Visitez-nous</h3>
+            <p>Visitez notre bureau pour discuter.</p>
+            <a href="" target="_blank">
+              12 av Driss 1er, immeuble Tanger Office Centre, 2ème étage n°18,
+              Tanger
+            </a>
+          </div>
+          <div class="contact__box">
+            <i class="fa-solid fa-phone"></i>
+            <h3>Appelez-nous</h3>
+            <p>Contactez-nous pour découvrir nos offres.</p>
+            <a href="https://wa.me/2120661104186" target="_blank"
+              >(+212) 06 61 10 41 86</a
+            >
             <span>(+212) 05 39 32 3528</span>
           </div>
         </div>
@@ -446,7 +462,7 @@
         <div class="footer__section-one">
           <img
             class="logo__white"
-            src="assets//imgs//LOGO-white.svg"
+            src="assets/imgs/LOGO-white.svg"
             alt="Sodev Logo"
           />
           <p>
@@ -480,17 +496,21 @@
             >
           </div>
           <div class="social-media__links">
-            <a href="www.facebook.com"
+            <a target="_blank" href="https://facebook.com/sodevtherealworld/"
               ><i class="fa-brands fa-facebook"></i
               ><span class="tooltip">facebook</span></a
             >
-            <a href="www.instagram.com"
+            <a target="_blank" href="https://instagram.com/sodevtherealworld/"
               ><i class="fa-brands fa-instagram"></i
               ><span class="tooltip">instagram</span></a
             >
-            <a href="www.twitter.com"
+            <a target="_blank" href="https://www.twitter.com"
               ><i class="fa-brands fa-twitter"></i
               ><span class="tooltip">twitter</span></a
+            >
+            <a target="_blank" href="https://wa.me/2120661104186"
+              ><i class="fa-brands fa-whatsapp"></i
+              ><span class="tooltip">whatsapp</span></a
             >
           </div>
         </div>
@@ -502,6 +522,9 @@
         </div>
       </div>
     </footer>
+    <div class="to__top">
+      <a href="#hero"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
   </body>
   <!--========== Fontawesome ==========-->
   <script
@@ -511,5 +534,5 @@
   <!--========== Swiper ==========-->
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <!--========== Main Js ==========-->
-  <script type="module" src="assets//javascript/script.js"></script>
+  <script type="module" src="assets/javascript/script.js"></script>
 </html>
