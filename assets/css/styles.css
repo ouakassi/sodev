@@ -685,15 +685,14 @@ main {
   background-color: black;
 }
 .wave__container {
-  height: 10rem;
+  transform: translateY(13rem);
+  z-index: 1;
 }
 .wave__one {
   /* transform: translateY(30rem); */
-  z-index: 1;
   text-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .wave__two {
-  z-index: 2;
   transform: translateY(1rem);
 }
 
@@ -706,6 +705,7 @@ main {
   background-color: black;
   color: var(--container-bg-color);
   max-height: 30rem;
+  z-index: 100;
 }
 
 .logo__white {
@@ -743,6 +743,8 @@ main {
   padding: 4rem 5rem;
 }
 .footer__section-two {
+  color: #000;
+  z-index: 4;
   display: flex;
   border-radius: 00% 0% 0% 35% / 0% 100% 0% 36%;
   background-color: var(--container-bg-color);
