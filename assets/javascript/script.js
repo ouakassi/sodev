@@ -51,8 +51,8 @@ navbarItems.forEach((item) => {
 
 // ------------------ animations  --------- //
 
-const servicesCard = document.querySelector(".card");
+// const servicesCard = document.querySelector(".card");
 
-gsap.from(servicesCard, { opacity: 0, y: -300, duration: 1, scale: 1.1 });
+// gsap.from(servicesCard, { opacity: 0, y: -300, duration: 1, scale: 1.1 });
 
 // gsap.to(servicesCard, { opacity: 1, y: 0, scale: 1 });
