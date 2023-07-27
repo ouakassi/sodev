@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sodev</title>
+    <link rel="icon" type="image/x-icon" href="/assets/imgs/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,12 +12,13 @@
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
   </head>
   <body>
     <header>
       <nav>
-        <a href="#hero" class="header__logo">
+        <a href="#" class="header__logo">
           <img src="assets/imgs/LOGO-black.png" alt="sodev-logo" />
           <span>SODEV</span>
         </a>
@@ -96,12 +98,12 @@
               <!-- Slides -->
               <img
                 class="swiper-slide"
-                src="assets/imgs/slider1.png"
+                src="assets/imgs/hero-sliders/slider1.png"
                 alt="slider1"
               />
               <img
                 class="swiper-slide"
-                src="assets/imgs/slider2.png"
+                src="assets/imgs/hero-sliders/slider2.png"
                 alt="slider2"
               />
             </div>
@@ -131,7 +133,7 @@
         <div class="cards">
           <div class="card">
             <img
-              src="assets/imgs/services1/app-development.png"
+              src="assets/imgs/services/app-development.png"
               alt="Développement de logiciels"
             />
             <h2 class="lang" key="services-logiciels-heading">
@@ -145,7 +147,7 @@
           </div>
           <div class="card">
             <img
-              src="assets/imgs/services1/mobile-dev.png"
+              src="assets/imgs/services/mobile-dev.png"
               alt="Développement des applications"
             />
 
@@ -158,7 +160,7 @@
           </div>
           <div class="card">
             <img
-              src="assets/imgs/services1//landing-page.png"
+              src="assets/imgs/services//landing-page.png"
               alt="Développement de logiciels"
             />
 
@@ -171,7 +173,7 @@
           </div>
           <div class="card">
             <img
-              src="assets/imgs/services1/ecommerce.png"
+              src="assets/imgs/services/ecommerce.png"
               alt="Développement de logiciels"
             />
 
@@ -185,7 +187,7 @@
           </div>
           <div class="card">
             <img
-              src="assets/imgs/services1/crm.png"
+              src="assets/imgs/services/crm.png"
               alt="Développement de logiciels"
             />
 
@@ -198,7 +200,7 @@
           </div>
           <div class="card">
             <img
-              src="assets/imgs/services1/ui-design.png"
+              src="assets/imgs/services/ui-design.png"
               alt="Développement de logiciels"
             />
 
@@ -529,6 +531,16 @@
         </div>
       </div>
     </footer>
+    <div id="loader">
+      <div class="loader-icon">
+        <img
+          class="loader__logo"
+          src="assets/imgs/LOGO-black.png"
+          alt="sodev logo"
+        />
+        <p>SODEV ...</p>
+      </div>
+    </div>
     <div class="to__top">
       <a href="#hero"><i class="fa-solid fa-arrow-up"></i></a>
     </div>
@@ -541,8 +553,6 @@
     src="https://kit.fontawesome.com/1d3b35f3ec.js"
     crossorigin="anonymous"
   ></script>
-  <!--========== Gsap ==========-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <!--========== Swiper ==========-->
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <!--========== Main Js ==========-->

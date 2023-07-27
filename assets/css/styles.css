@@ -79,7 +79,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  scroll-padding-top: calc(var(--header-height) + 2rem);
+  scroll-padding-top: calc(var(--header-height));
   scrollbar-color: red;
 }
 
@@ -89,6 +89,7 @@ body {
   background-color: var(--container-bg-color);
   color: var(--text-color);
   line-height: 1.4;
+  overflow-x: hidden;
 }
 
 h1,
@@ -216,7 +217,7 @@ header::before {
   position: absolute;
   top: -25px;
   left: -29px;
-  width: 46px;
+  width: 41px;
   height: calc(var(--header-height) + 2rem);
   background-color: var(--container-bg-color);
   transform: rotate(150deg);
@@ -227,7 +228,7 @@ header::after {
   position: absolute;
   top: -25px;
   right: -29px;
-  width: 46px;
+  width: 41px;
   height: calc(var(--header-height) + 2rem);
   background-color: var(--container-bg-color);
   transform: rotate(-150deg);
@@ -239,6 +240,9 @@ nav {
   align-items: center;
   /* padding: 2rem; */
 }
+.active__link {
+  color: var(--container-bg-color-3);
+}
 .header__logo {
   display: flex;
   align-items: center;
@@ -247,7 +251,7 @@ nav {
   font-weight: 700;
 }
 .header__logo img {
-  width: 6rem;
+  width: 5rem;
 }
 nav ul {
   display: flex;
@@ -435,6 +439,52 @@ main {
 .to__top a:hover {
   background-color: var(--container-bg-color-3);
 }
+
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.758);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: calc(var(--z-modal) + 1);
+}
+
+.loader-icon {
+  /* border: 4px solid #f3f3f3;
+  border-top: 4px solid var(--container-bg-color-3);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite; */
+}
+.loader__logo {
+  width: 5rem;
+  animation: spin 2s linear infinite;
+}
+#loader p {
+  color: #fff;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#loader p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
 /*==================== services ====================*/
 
 .services__section {
@@ -709,6 +759,10 @@ main {
   padding-bottom: 1rem;
   text-decoration-style: wavy;
   text-decoration-color: var(--container-bg-color-2);
+}
+.contact__box span:hover,
+.contact__box a:hover {
+  color: var(--container-bg-color-2);
 }
 
 /*==================== Footer ====================*/
