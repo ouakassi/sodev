@@ -3,9 +3,9 @@ new Swiper(".hero__swiper", {
   direction: "horizontal",
   loop: true,
   autoplay: {
-    delay: 3000,
+    delay: 1500,
   },
-  effect: "fade",
+  effect: "coverflow",
   //  pagination
   pagination: {
     el: ".swiper-pagination",
@@ -101,12 +101,18 @@ ScrollReveal({
   distance: "50px",
   duration: 1000,
   delay: 200,
-  viewFactor: 0.1,
-}).reveal(".card , .step__card , .section__heading", {
-  // easing: "cubic-bezier(1,0,0,1)",
-  interval: 600,
-  cleanup: true,
-});
+  viewFactor: 0.5,
+  viewOffset: {
+    top: -10,
+  },
+}).reveal(
+  ".card , .step__card , .section__heading , .contact__box , .logo__container",
+  {
+    // easing: "cubic-bezier(1,0,0,1)",
+    interval: 600,
+    cleanup: true,
+  }
+);
 
 ScrollReveal({ origin: "top", distance: "100px", delay: 200 }).reveal(
   ".card p , header  ",
@@ -134,8 +140,19 @@ ScrollReveal({
   duration: 1000,
   opacity: 1,
   viewFactor: 0.8,
-}).reveal(".steps__wave , .wave__container", {
+}).reveal(".steps__wave , .wave__container , .step__number", {
   interval: 600,
 
   cleanup: true,
 });
+
+// Transformation Numérique.
+// Développement des Logiciels sur Mesure.
+// Développement d'applications Mobiles.
+// Conseil en gestion des projets.
+// E-COMMERCE
+// DIGITALISATION des entreprise
+// CONSEIL DIGITAL
+// CONCEPTION GRAPHIQUE
+// INTELLIGENCE ARTIFICIELLE
+// SOFTWARE DÉVELOPPEMENT
