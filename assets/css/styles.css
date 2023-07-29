@@ -1044,7 +1044,7 @@ main {
   .hero__text,
   .hero__slider {
     width: auto;
-    max-height: 50rem;
+    /* max-height: 50rem; */
   }
   .hero__slider {
     padding: 4rem;

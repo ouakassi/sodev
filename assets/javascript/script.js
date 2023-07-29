@@ -19,6 +19,10 @@ new Swiper(".hero__swiper", {
   },
 });
 
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+};
+
 // ------------------ to top button --------- //
 
 let toTopElement = document.querySelector(".to__top");
@@ -106,10 +110,9 @@ ScrollReveal({
     top: -10,
   },
 }).reveal(
-  ".card , .step__card , .section__heading , .contact__box , .logo__container",
+  ".card , .step__card , .section__heading , .contact__box , .objectif , .hero__text h1  ",
   {
-    // easing: "cubic-bezier(1,0,0,1)",
-    interval: 600,
+    // interval: 600,
     cleanup: true,
   }
 );
@@ -117,7 +120,6 @@ ScrollReveal({
 ScrollReveal({ origin: "top", distance: "100px", delay: 200 }).reveal(
   ".card p , header  ",
   {
-    // easing: "cubic-bezier(1,0,0,1)",
     interval: 600,
     cleanup: true,
   }
@@ -128,7 +130,6 @@ ScrollReveal().reveal(".button");
 ScrollReveal({ origin: "top", distance: "20px", delay: 200 }).reveal(
   " .show__button ",
   {
-    // easing: "cubic-bezier(1,0,0,1)",
     cleanup: true,
   }
 );
@@ -142,7 +143,6 @@ ScrollReveal({
   viewFactor: 0.8,
 }).reveal(".steps__wave , .wave__container , .step__number", {
   interval: 600,
-
   cleanup: true,
 });
 
