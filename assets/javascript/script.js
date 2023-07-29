@@ -112,7 +112,7 @@ ScrollReveal({
 }).reveal(
   ".card , .step__card , .section__heading , .contact__box , .objectif , .hero__text h1  ",
   {
-    // interval: 600,
+    interval: 600,
     cleanup: true,
   }
 );
@@ -146,13 +146,21 @@ ScrollReveal({
   cleanup: true,
 });
 
-// Transformation Numérique.
-// Développement des Logiciels sur Mesure.
-// Développement d'applications Mobiles.
-// Conseil en gestion des projets.
-// E-COMMERCE
-// DIGITALISATION des entreprise
-// CONSEIL DIGITAL
-// CONCEPTION GRAPHIQUE
-// INTELLIGENCE ARTIFICIELLE
-// SOFTWARE DÉVELOPPEMENT
+ScrollReveal({
+  origin: "top",
+  distance: "20px",
+  delay: 300,
+  rotate: "90deg",
+  duration: 1200,
+}).reveal(".logo__container", {
+  // interval: 600,
+  cleanup: true,
+});
+
+const element = document.querySelector(".logo__container");
+
+anime({
+  targets: element,
+  rotate: "90deg",
+  duration: 800,
+});
