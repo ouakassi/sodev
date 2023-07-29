@@ -100,7 +100,7 @@ window.addEventListener("scroll", scrollActive);
 
 // ------------------ animations  --------- //
 
-ScrollReveal({
+const options = {
   origin: "bottom",
   distance: "50px",
   duration: 1000,
@@ -109,13 +109,20 @@ ScrollReveal({
   viewOffset: {
     top: -10,
   },
-}).reveal(
-  ".card , .step__card , .section__heading , .contact__box , .objectif , .hero__text h1  ",
-  {
-    interval: 600,
-    cleanup: true,
-  }
-);
+};
+
+ScrollReveal(options).reveal(".hero__text h1,.objectif,.section__heading  ", {
+  interval: 600,
+  cleanup: true,
+});
+ScrollReveal(options).reveal(" .card , .step__card", {
+  interval: 600,
+  cleanup: true,
+});
+ScrollReveal(options).reveal(".contact__box", {
+  interval: 600,
+  cleanup: true,
+});
 
 ScrollReveal({ origin: "top", distance: "100px", delay: 200 }).reveal(
   ".card p , header  ",
