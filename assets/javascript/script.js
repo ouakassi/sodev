@@ -111,8 +111,20 @@ const options = {
   },
 };
 
-ScrollReveal(options).reveal(".hero__text h1,.objectif,.section__heading  ", {
-  interval: 600,
+ScrollReveal(options).reveal(
+  ".hero__text h1,.section__heading , .hero__slider",
+  {
+    interval: 600,
+    cleanup: true,
+  }
+);
+ScrollReveal({
+  origin: "left",
+  distance: "20px",
+  delay: 300,
+  duration: 800,
+}).reveal(".objectif", {
+  interval: 200,
   cleanup: true,
 });
 ScrollReveal(options).reveal(" .card , .step__card", {
@@ -162,12 +174,4 @@ ScrollReveal({
 }).reveal(".logo__container", {
   // interval: 600,
   cleanup: true,
-});
-
-const element = document.querySelector(".logo__container");
-
-anime({
-  targets: element,
-  rotate: "90deg",
-  duration: 800,
 });

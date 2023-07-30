@@ -1036,10 +1036,6 @@ main {
     height: 2.5rem;
     font-size: var(--fs-l);
   }
-  .swiper-pagination-bullet {
-    width: 2.4rem;
-    height: 0.8rem;
-  }
 
   .hero__text,
   .hero__slider {
@@ -1116,6 +1112,10 @@ main {
   }
   .hero__slider {
     padding: 1rem;
+  }
+  .swiper-pagination-bullet {
+    width: 15px;
+    height: 4px;
   }
   .services__section .card {
     padding: 2rem 1rem;
