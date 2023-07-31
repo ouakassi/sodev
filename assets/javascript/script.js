@@ -53,8 +53,6 @@ navbarItems.forEach((item) => {
   });
 });
 
-// ------------------ loader --------- //
-
 //------------------- Loading content ------------------ //
 
 const spinnerContainer = document.querySelector(".spinner__container");
@@ -67,7 +65,7 @@ function hideLoader() {
   document.getElementById("loader").style.display = "none";
 }
 
-document.addEventListener("DOMContentLoaded", function (e) {
+document.addEventListener("load", function (e) {
   showLoader();
 });
 
