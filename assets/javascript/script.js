@@ -111,23 +111,42 @@ const options = {
   },
 };
 
-ScrollReveal(options).reveal(
-  ".hero__text h1,.section__heading , .hero__slider",
+ScrollReveal().reveal(
+  ".hero__text h1,.section__heading , .hero__slider  ,  .step__number",
   {
+    origin: "bottom",
+    distance: "50px",
+    duration: 1000,
+    delay: 200,
+    viewFactor: 0.5,
+    viewOffset: {
+      top: -10,
+    },
     interval: 600,
     cleanup: true,
   }
 );
+
 ScrollReveal({
   origin: "left",
   distance: "20px",
   delay: 300,
   duration: 800,
-}).reveal(".objectif", {
+}).reveal(".objectif ", {
   interval: 200,
   cleanup: true,
 });
-ScrollReveal(options).reveal(" .card , .step__card", {
+ScrollReveal({
+  origin: "left",
+  distance: "20px",
+  delay: 300,
+  duration: 800,
+}).reveal(".steps__text li ", {
+  interval: 200,
+  cleanup: true,
+});
+
+ScrollReveal(options).reveal(".card , .step__card", {
   interval: 600,
   cleanup: true,
 });
@@ -146,8 +165,8 @@ ScrollReveal({ origin: "top", distance: "100px", delay: 200 }).reveal(
 
 ScrollReveal().reveal(".button");
 
-ScrollReveal({ origin: "top", distance: "20px", delay: 200 }).reveal(
-  " .show__button ",
+ScrollReveal({ origin: "bottom", distance: "20px", delay: 200 }).reveal(
+  " .show__button",
   {
     cleanup: true,
   }
@@ -160,7 +179,7 @@ ScrollReveal({
   duration: 1000,
   opacity: 1,
   viewFactor: 0.8,
-}).reveal(".steps__wave , .wave__container , .step__number", {
+}).reveal(".steps__wave , .wave__container  ", {
   interval: 600,
   cleanup: true,
 });
