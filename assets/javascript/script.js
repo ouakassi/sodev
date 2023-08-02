@@ -33,7 +33,28 @@ window.addEventListener("scroll", () => {
     : (toTopElement.style.display = "none");
 });
 
+// ------------------ languages --------- //
+// const languagesSelector = document.querySelector(".languages__selector");
+// const languagesList = document.querySelector(".languages__list");
+
+// languagesSelector.addEventListener("click", () => {
+//   languagesList.classList.toggle("visible");
+// });
+
+// languagesSelector.addEventListener("blur", () => {
+//   languagesList.classList.remove("visible");
+// });
 // ------------------ responssive navbar --------- //
+
+const handleScroll = () => {
+  if (window.scrollY > 0) {
+    header.classList.add("header__box");
+  } else {
+    header.classList.remove("header__box");
+  }
+};
+
+window.addEventListener("scroll", handleScroll);
 
 const showButton = document.querySelector(".show__button");
 const closeButton = document.querySelector(".close__button");
@@ -97,72 +118,89 @@ function scrollActive() {
 window.addEventListener("scroll", scrollActive);
 
 // ------------------ animations  --------- //
-
+// options
 const options = {
   origin: "bottom",
   distance: "50px",
   duration: 1000,
   delay: 200,
-  viewFactor: 0.5,
-  viewOffset: {
-    top: -10,
-  },
+  // viewFactor: 0.5,
+  // viewOffset: {
+  //   top: -10,
+  // },
 };
 
-ScrollReveal().reveal(
-  ".hero__text h1,.section__heading , .hero__slider  ,  .step__number",
+const waveOptions = {
+  origin: "bottom",
+  distance: "70px",
+  delay: 300,
+  duration: 1000,
+  opacity: 1,
+  reset: true,
+};
+
+// navbar
+ScrollReveal({ origin: "top", distance: "100px", delay: 200 }).reveal(
+  " header , .show__button ",
   {
-    origin: "bottom",
-    distance: "50px",
-    duration: 1000,
-    delay: 200,
-    viewFactor: 0.5,
-    viewOffset: {
-      top: -10,
-    },
     interval: 600,
     cleanup: true,
   }
 );
+// hero
+ScrollReveal().reveal(".hero__text h1,.section__heading , .hero__slider   ", {
+  origin: "bottom",
+  distance: "50px",
+  duration: 1000,
+  delay: 200,
+  viewFactor: 0.5,
+  reset: true,
+  interval: 600,
+  cleanup: true,
+});
 
 ScrollReveal({
   origin: "left",
   distance: "20px",
   delay: 300,
   duration: 800,
-}).reveal(".objectif ", {
-  interval: 200,
+}).reveal(".objectif , .logo__container ", {
+  interval: 300,
+  cleanup: true,
+});
+
+// services
+ScrollReveal(options).reveal(".card , .card h2 , .card p  ", {
+  interval: 300,
+  cleanup: true,
+});
+
+// steps
+ScrollReveal().reveal(".step__card ", {
+  interval: 300,
+  cleanup: true,
+});
+ScrollReveal().reveal(".step__number ", {
+  interval: 300,
   cleanup: true,
 });
 ScrollReveal({
   origin: "left",
-  distance: "20px",
+  distance: "30px",
   delay: 300,
   duration: 800,
 }).reveal(".steps__text li ", {
-  interval: 200,
+  interval: 300,
   cleanup: true,
 });
 
-ScrollReveal(options).reveal(".card , .step__card", {
-  interval: 600,
-  cleanup: true,
-});
-ScrollReveal(options).reveal(".contact__box", {
-  interval: 600,
+// contact
+ScrollReveal().reveal(".contact__box", {
+  interval: 400,
   cleanup: true,
 });
 
-ScrollReveal({ origin: "top", distance: "100px", delay: 200 }).reveal(
-  ".card p , header  ",
-  {
-    interval: 600,
-    cleanup: true,
-  }
-);
-
-ScrollReveal().reveal(".button");
-
+// buttons & texts
 ScrollReveal({ origin: "bottom", distance: "20px", delay: 200 }).reveal(
   " .show__button",
   {
@@ -170,25 +208,7 @@ ScrollReveal({ origin: "bottom", distance: "20px", delay: 200 }).reveal(
   }
 );
 
-ScrollReveal({
-  origin: "bottom",
-  distance: "70px",
-  delay: 300,
-  duration: 1000,
-  opacity: 1,
-  viewFactor: 0.8,
-}).reveal(".steps__wave , .wave__container  ", {
-  interval: 600,
-  cleanup: true,
-});
+// waves
 
-ScrollReveal({
-  origin: "top",
-  distance: "20px",
-  delay: 300,
-  rotate: "90deg",
-  duration: 1200,
-}).reveal(".logo__container", {
-  // interval: 600,
-  cleanup: true,
-});
+ScrollReveal(waveOptions).reveal(".steps__wave");
+ScrollReveal(waveOptions).reveal(".wave__container");
