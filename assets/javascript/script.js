@@ -132,7 +132,7 @@ const options = {
 
 const waveOptions = {
   origin: "bottom",
-  distance: "70px",
+  distance: "50px",
   delay: 300,
   duration: 1000,
   opacity: 1,
@@ -154,7 +154,7 @@ ScrollReveal().reveal(".hero__text h1,.section__heading , .hero__slider   ", {
   duration: 1000,
   delay: 200,
   viewFactor: 0.5,
-  reset: true,
+  // reset: true,
   interval: 600,
   cleanup: true,
 });
