@@ -582,14 +582,28 @@ main {
     rgba(156, 123, 46, 0.3) 14px 14px, rgba(156, 123, 46, 0.2) 22px 22px;
 }
 
+@keyframes borderRadiusAnimation {
+  0% {
+    border-radius: 0% 10% 10% 0% / 100%;
+  }
+  50% {
+    border-radius: 10% 0% 0% 10% / 100%;
+  }
+  100% {
+    border-radius: 0% 10% 10% 0% / 100%;
+  }
+}
+
 .card img {
   max-width: 55rem;
   min-height: 35rem;
+  /* height: 30rem; */
   border-radius: 10px;
   border-radius: 10% 0% 0% 10% / 100% 0% 0% 100%;
   box-shadow: rgba(156, 123, 46, 0.4) 0px 0px 0px 2px,
     rgba(156, 123, 46, 0.3) 8px 8px, rgba(156, 123, 46, 0.2) 12px 12px;
   transition: 0.2s;
+  animation: borderRadiusAnimation 5s infinite;
 }
 
 .card__text {
@@ -844,7 +858,9 @@ main {
   gap: 2rem;
 }
 
-.address span {
+.adress__mail,
+.adress__ad,
+.adress__phone {
   display: flex;
   gap: 1rem;
 }
@@ -950,7 +966,7 @@ main {
     height: auto;
     width: 100%;
     justify-content: flex-start;
-    align-items: baseline;
+    /* align-items: baseline; */
     padding: 2rem;
     z-index: var(--z-modal);
     top: -100%;
@@ -1188,5 +1204,17 @@ main {
   .footer__section-one,
   .footer__section-two {
     padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .card img {
+    max-width: 35rem;
+    min-height: auto;
+    width: 30rem;
+    height: 22rem;
+  }
+  .card h1 {
+    text-align: center;
   }
 }

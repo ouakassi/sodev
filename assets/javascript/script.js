@@ -46,12 +46,28 @@ window.addEventListener("scroll", () => {
 // });
 // ------------------ responssive navbar --------- //
 
+// let prevScrollY = 0;
+
 const handleScroll = () => {
+  // const currentScrollY = window.scrollY;
+
   if (window.scrollY > 0) {
     header.classList.add("header__box");
   } else {
     header.classList.remove("header__box");
   }
+
+  if (currentScrollY >= stepsSection.offsetTop) {
+    header.classList.add("header__steps");
+  } else {
+    header.classList.remove("header__steps");
+  }
+
+  // prevScrollY > currentScrollY
+  //   ? (header.style.height = "calc(var(--header-height) + 1rem)")
+  //   : (header.style.height = "auto");
+  // window.innerWidth > 769 && (prevScrollY = currentScrollY + 1000);
+  // prevScrollY = currentScrollY;
 };
 
 window.addEventListener("scroll", handleScroll);
@@ -60,6 +76,8 @@ const showButton = document.querySelector(".show__button");
 const closeButton = document.querySelector(".close__button");
 const header = document.querySelector("header");
 const navbarItems = document.querySelectorAll("nav li");
+
+const stepsSection = document.querySelector(".steps__section");
 
 showButton.addEventListener("click", () => {
   header.classList.add("active");
@@ -76,6 +94,8 @@ navbarItems.forEach((item) => {
 
 //------------------- Loading content ------------------ //
 
+//------------------- Loading content ------------------ //
+
 const spinnerContainer = document.querySelector(".spinner__container");
 const spinner = document.querySelector(".spinner");
 
@@ -86,11 +106,11 @@ function hideLoader() {
   document.getElementById("loader").style.display = "none";
 }
 
-document.addEventListener("load", function (e) {
+document.addEventListener("load", () => {
   showLoader();
 });
 
-window.addEventListener("load", function (e) {
+window.addEventListener("load", () => {
   hideLoader();
 });
 
@@ -136,7 +156,7 @@ const waveOptions = {
   delay: 300,
   duration: 1000,
   opacity: 1,
-  reset: true,
+  // reset: true,
 };
 
 // navbar
@@ -149,7 +169,7 @@ ScrollReveal({ origin: "top", distance: "100px", delay: 200 }).reveal(
 );
 // hero
 ScrollReveal().reveal(".hero__text h1,.section__heading , .hero__slider   ", {
-  origin: "bottom",
+  origin: "top",
   distance: "50px",
   duration: 1000,
   delay: 200,
@@ -170,7 +190,7 @@ ScrollReveal({
 });
 
 // services
-ScrollReveal(options).reveal(".card , .card h2 , .card p  ", {
+ScrollReveal(options).reveal(" .card img , .card h1 , .card p  ", {
   interval: 300,
   cleanup: true,
 });
@@ -212,3 +232,14 @@ ScrollReveal({ origin: "bottom", distance: "20px", delay: 200 }).reveal(
 
 ScrollReveal(waveOptions).reveal(".steps__wave");
 ScrollReveal(waveOptions).reveal(".wave__container");
+
+// Transformation Numérique.
+// Développement des Logiciels sur Mesure.
+// Développement d'applications Mobiles.
+// Conseil en gestion des projets.
+// E-COMMERCE
+// DIGITALISATION des entreprise
+// CONSEIL DIGITAL
+// CONCEPTION GRAPHIQUE
+// INTELLIGENCE ARTIFICIELLE
+// SOFTWARE DÉVELOPPEMENT
