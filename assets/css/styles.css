@@ -642,12 +642,10 @@ main {
 .step__card {
   position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  margin: 4rem 2rem;
-  gap: 1rem;
+  margin: 6rem 2rem;
+  gap: 4rem;
   padding: 6rem 2rem;
-  max-width: clamp(30rem, 60rem, 90%);
   background-color: #04486875;
   box-shadow: rgba(4, 72, 104, 0.5) 0px 8px 4px,
     rgba(4, 72, 104, 0.4) 1px 17px 13px -3px,
@@ -656,15 +654,16 @@ main {
   transition: 0.2s;
 }
 .step__card:hover {
-  padding: 6rem 5rem;
+  transform: translateY(-10px) scale(1.01);
 }
-.steps .steps__icon {
-  width: 10rem;
-  margin-bottom: 1rem;
+.steps .step__img {
+  width: 45rem;
+  height: 30rem;
+  border-radius: 10px;
 }
 .step__number {
   position: absolute;
-  top: 50px;
+  top: 25px;
   left: 50px;
   font-size: var(--fs-2xl);
   background-color: #9b7b2e;
@@ -678,15 +677,21 @@ main {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
+.step__heading {
+  display: flex;
+  flex-direction: column;
+}
 .steps h3 {
   font-family: var(--font-5);
   font-size: var(--fs-l);
   text-transform: uppercase;
   color: var(--tertiary-color);
   color: var(--container-bg-color-3);
+  text-shadow: 0px 0px 5px var(--container-bg-color-3);
+  text-align: center;
 }
 
-.steps .steps__text {
+.steps .step__text {
   list-style-type: circle;
   max-width: 50rem;
   padding: 2rem;
@@ -1101,6 +1106,9 @@ main {
   .steps__section {
     padding: 0;
   }
+  .step__card {
+    flex-direction: column;
+  }
   .wave__container {
     transform: translateY(8rem);
   }
@@ -1180,12 +1188,15 @@ main {
     transform: translateY(0rem);
   }
   .step__card {
-    margin: 2rem 0rem;
-    gap: 1rem;
-    padding: 3rem 2rem;
+    gap: 3rem;
+    padding: 3rem 1rem;
+    margin: 6rem 1rem;
   }
   .step__card:hover {
     padding: 3rem 2rem;
+  }
+  .steps .step__img {
+    height: 22rem;
   }
   .step__number {
     top: 20px;
