@@ -49,7 +49,10 @@ window.addEventListener("scroll", () => {
 // let prevScrollY = 0;
 
 const handleScroll = () => {
-  // const currentScrollY = window.scrollY;
+  const headerLogoEl = document.querySelector(".header__logo img");
+  const navbarEl = document.querySelector("nav");
+
+  const currentScrollY = window.scrollY;
 
   if (window.scrollY > 0) {
     header.classList.add("header__box");
@@ -57,10 +60,20 @@ const handleScroll = () => {
     header.classList.remove("header__box");
   }
 
-  if (currentScrollY >= stepsSection.offsetTop) {
+  if (
+    currentScrollY >= stepsSection.offsetTop + 100 &&
+    currentScrollY <= stepsSection.offsetTop + stepsSection.offsetHeight - 80
+  ) {
     header.classList.add("header__steps");
+    headerLogoEl.src = "/assets/imgs/LOGO-white.png";
+    header.style.background = "#000";
+    navbarEl.style.background = "#000";
   } else {
+    header.style.background = "var(--container-bg-color)";
+    navbarEl.style.background = "var(--container-bg-color)";
+
     header.classList.remove("header__steps");
+    headerLogoEl.src = "assets/imgs/LOGO-black.png";
   }
 
   // prevScrollY > currentScrollY
@@ -91,8 +104,6 @@ navbarItems.forEach((item) => {
     header.classList.remove("active");
   });
 });
-
-//------------------- Loading content ------------------ //
 
 //------------------- Loading content ------------------ //
 
@@ -161,14 +172,14 @@ const waveOptions = {
 
 // navbar
 ScrollReveal({ origin: "top", distance: "100px", delay: 200 }).reveal(
-  " header , .show__button ",
+  " header ",
   {
     interval: 600,
     cleanup: true,
   }
 );
 // hero
-ScrollReveal().reveal(".hero__text h1,.section__heading , .hero__slider   ", {
+ScrollReveal().reveal(".hero__text h1,.section__heading , .hero__slider", {
   origin: "top",
   distance: "50px",
   duration: 1000,
@@ -221,12 +232,6 @@ ScrollReveal().reveal(".contact__box", {
 });
 
 // buttons & texts
-ScrollReveal({ origin: "bottom", distance: "20px", delay: 200 }).reveal(
-  " .show__button",
-  {
-    cleanup: true,
-  }
-);
 
 // waves
 
