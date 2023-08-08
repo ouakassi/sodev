@@ -986,7 +986,7 @@ main {
     left: 0;
     width: 100%;
     /* height: 0; */
-    /* background: var(--container-bg-color); */
+    background: var(--container-bg-color);
   }
 
   .header__logo {
