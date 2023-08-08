@@ -148,6 +148,12 @@ function scrollActive() {
 
 window.addEventListener("scroll", scrollActive);
 
+// ------------------ date year --------- //
+const dateEl = document.querySelector(".copyrights__date");
+const date = new Date().getUTCFullYear();
+
+dateEl.textContent = date;
+
 // ------------------ animations  --------- //
 // options
 const options = {
