@@ -176,7 +176,7 @@ const waveOptions = {
   delay: 300,
   duration: 1000,
   opacity: 1,
-  // reset: true,
+  reset: true,
 };
 
 // navbar
@@ -220,16 +220,17 @@ ScrollReveal().reveal(".step__card ", {
   interval: 300,
   cleanup: true,
 });
-ScrollReveal().reveal(".step__number ", {
+ScrollReveal().reveal(".step__number , .step__card h3 , .step__img", {
   interval: 300,
   cleanup: true,
 });
+
 ScrollReveal({
   origin: "left",
   distance: "30px",
   delay: 300,
   duration: 800,
-}).reveal(".steps__text li ", {
+}).reveal(".step__text li", {
   interval: 300,
   cleanup: true,
 });
@@ -244,8 +245,8 @@ ScrollReveal().reveal(".contact__box", {
 
 // waves
 
-ScrollReveal(waveOptions).reveal(".steps__wave");
-ScrollReveal(waveOptions).reveal(".wave__container");
+ScrollReveal(waveOptions).reveal(".steps__wave", { cleanup: true });
+ScrollReveal(waveOptions).reveal(".wave__container", { cleanup: true });
 
 // Transformation Numérique.
 // Développement des Logiciels sur Mesure.

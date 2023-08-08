@@ -1381,9 +1381,9 @@ main {
     padding: 0;
   }
   .wave__container {
-    -webkit-transform: translateY(8rem);
-    -ms-transform: translateY(8rem);
-    transform: translateY(8rem);
+    -webkit-transform: translateY(1rem);
+    -ms-transform: translateY(1rem);
+    transform: translateY(1rem);
   }
   .contact__wrapper {
     -ms-flex-wrap: wrap;
@@ -1500,5 +1500,9 @@ main {
   }
   .card h1 {
     text-align: center;
+  }
+
+  .steps .step__img {
+    height: 20rem;
   }
 }
