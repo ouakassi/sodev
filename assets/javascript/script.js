@@ -235,6 +235,15 @@ ScrollReveal({
   cleanup: true,
 });
 
+ScrollReveal({
+  origin: "top",
+  // opacity: 1,
+  distance: "50px",
+  viewFactor: 0.1,
+}).reveal(".arrow", {
+  cleanup: true,
+});
+
 // contact
 ScrollReveal().reveal(".contact__box", {
   interval: 400,
