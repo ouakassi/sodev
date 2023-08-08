@@ -52,6 +52,9 @@ const handleScroll = () => {
   const headerLogoEl = document.querySelector(".header__logo img");
   const navbarEl = document.querySelector("nav");
 
+  const whiteLogo = "assets/imgs/LOGO-white.png";
+  const blackLogo = "assets/imgs/LOGO-black.png";
+
   const currentScrollY = window.scrollY;
 
   if (window.scrollY > 0) {
@@ -65,7 +68,7 @@ const handleScroll = () => {
     currentScrollY <= stepsSection.offsetTop + stepsSection.offsetHeight - 80
   ) {
     header.classList.add("header__steps");
-    headerLogoEl.src = "/assets/imgs/LOGO-white.png";
+    headerLogoEl.src = whiteLogo;
     header.style.background = "#000";
     navbarEl.style.background = "#000";
   } else {
@@ -73,7 +76,7 @@ const handleScroll = () => {
     navbarEl.style.background = "var(--container-bg-color)";
 
     header.classList.remove("header__steps");
-    headerLogoEl.src = "assets/imgs/LOGO-black.png";
+    headerLogoEl.src = blackLogo;
   }
 
   // prevScrollY > currentScrollY
