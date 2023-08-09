@@ -918,10 +918,6 @@ main {
   color: #fff;
 }
 
-.dev__team i {
-  color: red;
-}
-
 @media screen and (max-width: 1025px) {
   section {
     padding: 3rem 3rem;
