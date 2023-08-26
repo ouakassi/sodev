@@ -34,16 +34,16 @@ window.addEventListener("scroll", () => {
 });
 
 // ------------------ languages --------- //
-// const languagesSelector = document.querySelector(".languages__selector");
-// const languagesList = document.querySelector(".languages__list");
+const languagesSelector = document.querySelector(".languages__selector");
+const languagesList = document.querySelector(".languages__list");
 
-// languagesSelector.addEventListener("click", () => {
-//   languagesList.classList.toggle("visible");
-// });
+languagesSelector.addEventListener("click", () => {
+  languagesList.classList.toggle("visible");
+});
 
-// languagesSelector.addEventListener("blur", () => {
-//   languagesList.classList.remove("visible");
-// });
+languagesSelector.addEventListener("blur", () => {
+  languagesList.classList.remove("visible");
+});
 // ------------------ responssive navbar --------- //
 
 // let prevScrollY = 0;
@@ -51,6 +51,7 @@ window.addEventListener("scroll", () => {
 const handleScroll = () => {
   const headerLogoEl = document.querySelector(".header__logo img");
   const navbarEl = document.querySelector("nav");
+  const listEl = document.querySelector("nav ul");
 
   const whiteLogo = "assets/imgs/LOGO-white.png";
   const blackLogo = "assets/imgs/LOGO-black.png";
@@ -71,9 +72,11 @@ const handleScroll = () => {
     headerLogoEl.src = whiteLogo;
     header.style.background = "#000";
     navbarEl.style.background = "#000";
+    listEl.style.background = "#000";
   } else {
     header.style.background = "var(--container-bg-color)";
     navbarEl.style.background = "var(--container-bg-color)";
+    listEl.style.background = "var(--container-bg-color)";
 
     header.classList.remove("header__steps");
     headerLogoEl.src = blackLogo;

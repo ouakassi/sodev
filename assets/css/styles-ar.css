@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo:wght@300;400;500;600;700;800;900;1000&display=swap");
+:root {
+  /*========== Font and typography ==========*/
+  --font-1: "Cairo", sans-serif;
+  --font-2: "Almarai", sans-serif;
+  --font-3: "Cairo", sans-serif;
+  --font-4: "Cairo", sans-serif;
+  --font-5: "Cairo", sans-serif;
+  --font-6: "Barlow", sans-serif;
+}
+
+nav ul i,
+.hero__section .objectifs i,
+.hero__section .button i,
+.hero__section .objectifs i {
+  margin-left: 1rem;
+  margin-right: 0;
+}
+.hero__section .button i {
+  margin-right: 1rem;
+  margin-left: 0;
+}
+
+.hero__section .objectifs {
+  padding: 0 2rem;
+  font-weight: var(--fw-normal);
+  font-family: var(--font-2);
+  line-height: 1.9;
+}
+
+.languages__list {
+  left: 0;
+  right: unset;
+}
+
+.card img {
+  border-radius: 0% 10% 10% 0% / 100%;
+}
+
+.card.reverse img {
+  border-radius: 10% 0% 0% 10% / 100% 0% 0% 100%;
+}
+
+.to__top a {
+  padding: 1rem 2rem;
+}
+
+footer .adress__phone {
+  font-family: var(--font-6);
+}

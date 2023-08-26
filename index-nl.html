@@ -1,32 +1,34 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="nl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sodev</title>
+    <title>SODEV</title>
     <meta
       name="description"
-      content="SODEV une entreprise dynamique tournée vers
-    l'avenir, nous nous adaptons en permanence au paysage changeant de
-    l'ère numérique."
+      content="SODEV, een dynamisch bedrijf gericht op de toekomst, past zich voortdurend aan aan het veranderende landschap van het digitale tijdperk."
     />
+
     <meta property="og:title" content="Sodev" />
     <meta
       property="og:description"
-      content="Your concise and relevant website description goes here."
+      content="SODEV, een dynamisch bedrijf gericht op de toekomst."
     />
+
     <meta property="og:image" content="assets/imgs/LOGO-black.png" />
     <meta property="og:url" content="https://sodevtherealworld.com" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Sodev" />
-    <link rel="icon" type="image/x-icon" href="/assets/imgs/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="assets/imgs/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" type="text/css" href="/assets/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
   </head>
 
@@ -34,20 +36,20 @@
     <header>
       <nav>
         <a href="#" class="header__logo">
-          <img src="/assets/imgs/LOGO-black.png" alt="sodev-logo" />
-          <span>SODEV</span>
+          <img src="assets/imgs/LOGO-black.png" alt="sodev-logo" />
+          <div><span>SODEV</span> <span>De echte wereld</span></div>
         </a>
         <ul>
           <li>
-            <a href="#hero"><i class="fa-solid fa-house"></i>accueil</a>
+            <a href="#hero"><i class="fa-solid fa-house"></i>Startpagina</a>
           </li>
           <li>
             <a href="#services"
-              ><i class="fa-solid fa-briefcase"></i>services</a
+              ><i class="fa-solid fa-briefcase"></i>Diensten</a
             >
           </li>
           <li>
-            <a href="#steps"><i class="fa-solid fa-pen-nib"></i>processus</a>
+            <a href="#steps"><i class="fa-solid fa-pen-nib"></i>Proces</a>
           </li>
           <li>
             <a href="#contact"><i class="fa-solid fa-phone"></i>contact</a>
@@ -57,61 +59,69 @@
           <span class="languages__selector">
             <img
               class="languages__icon"
-              src="assets/imgs/languages/fr.png"
-              alt="fr"
+              src="assets/imgs/languages/nl.png"
+              alt="nl"
             />
           </span>
           <div class="languages__list">
-            <a href="#">
+            <a href="index.html">
+              <img
+                class="languages__icon"
+                src="assets/imgs/languages/fr.png"
+                alt="fr"
+              />
+              <span>Frans</span>
+            </a>
+            <a href="index-en.html">
               <img
                 class="languages__icon"
                 src="assets/imgs/languages/en.png"
                 alt="en"
               />
+              <span>Engels</span>
             </a>
-            <a href="#">
+            <a href="index-ar.html">
               <img
                 class="languages__icon"
                 src="assets/imgs/languages/ar.png"
                 alt="ar"
               />
+              <span>Arabisch</span>
             </a>
-            <a href="#">
-              <img
-                class="languages__icon"
-                src="assets/imgs/languages/nl.png"
-                alt="nl"
-              />
-            </a>
-            <a href="#">
+            <a href="index-de.html">
               <img
                 class="languages__icon"
                 src="assets/imgs/languages/de.png"
                 alt="de"
               />
+              <span>Duits</span>
             </a>
           </div>
         </div>
+
+        <div class="close__button">
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+        <div class="show__button">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </nav>
-      <div class="close__button">
-        <i class="fa-regular fa-circle-xmark"></i>
-      </div>
     </header>
 
     <main>
       <section id="hero" class="section hero__section">
         <div class="hero__text">
-          <div class="logo__container">
+          <!-- <div class="logo__container">
             <img
               class="logo"
-              src="/assets/imgs/LOGO-black.svg"
+              src="assets/imgs/LOGO-black.svg"
               alt="sodev-logo"
             />
             <span>creativity & services</span>
-          </div>
+          </div> -->
 
           <!-- <h1>welcome to the real world</h1> -->
-          <h1>"LE SERVICE NUMÉRIQUE QUE VOUS DÉSIREZ"</h1>
+          <h1>"De Digitale Dienst Die U Verlangt"</h1>
 
           <!-- <p>
             Nous élaborons des stratégies efficaces pour vous aider à atteindre
@@ -122,41 +132,40 @@
               <i class="fa-regular fa-square-check"></i>transformation numérique
             </li> -->
             <li class="objectif">
-              <i class="fa-regular fa-square-check"></i>software développement
+              <i class="fa-regular fa-square-check"></i>softwareontwikkeling
             </li>
             <li class="objectif">
-              <i class="fa-regular fa-square-check"></i>développement des
-              logiciels sur mesure
+              <i class="fa-regular fa-square-check"></i>Maatwerk
+              Softwareontwikkeling
             </li>
             <li class="objectif">
-              <i class="fa-regular fa-square-check"></i>développement
-              d'applications mobiles
+              <i class="fa-regular fa-square-check"></i>Ontwikkeling van Mobiele
+              Applicaties
             </li>
             <!-- <li class="objectif">
-              <i class="fa-regular fa-square-check"></i>conseil en gestion des
-              projets
+              <i class="fa-regular fa-square-check"></i>conseil en gestion des projets
             </li> -->
             <!-- <li class="objectif">
               <i class="fa-regular fa-square-check"></i>e-commerce
             </li> -->
             <!-- <li class="objectif">
-              <i class="fa-regular fa-square-check"></i>digitalisation des
-              entreprises
+              <i class="fa-regular fa-square-check"></i>digitalisation des entreprises
             </li> -->
             <li class="objectif">
-              <i class="fa-regular fa-square-check"></i>Conseil en
-              digitalisation Des entreprises
+              <i class="fa-regular fa-square-check"></i>Digitalisering Advies
+              voor Bedrijven
             </li>
             <li class="objectif">
-              <i class="fa-regular fa-square-check"></i>conception graphique
+              <i class="fa-regular fa-square-check"></i>Grafisch Ontwerp
             </li>
             <li class="objectif">
-              <i class="fa-regular fa-square-check"></i>intelligence
-              artificielle
+              <i class="fa-regular fa-square-check"></i>Kunstmatige
+              Intelligentie
             </li>
           </ul>
-          <a href="#services" role="button" tabindex="0" class="button"
-            >nos services ?</a
+
+          <a href="#contact" role="button" class="button"
+            ><i class="fa-solid fa-phone"></i>Contacteer ons</a
           >
         </div>
         <div class="hero__slider">
@@ -165,37 +174,37 @@
               <!-- Slides -->
               <img
                 class="swiper-slide"
-                src="/assets/imgs/hero-sliders/slider1.jpg"
+                src="assets/imgs/hero-sliders/slider1.jpg"
                 alt="slider1"
               />
               <img
                 class="swiper-slide"
-                src="/assets/imgs/hero-sliders/slider2.jpg"
+                src="assets/imgs/hero-sliders/slider2.jpg"
                 alt="slider2"
               />
               <img
                 class="swiper-slide"
-                src="/assets/imgs/hero-sliders/slider3.jpg"
+                src="assets/imgs/hero-sliders/slider3.jpg"
                 alt="slider3"
               />
               <img
                 class="swiper-slide"
-                src="/assets/imgs/hero-sliders/slider4.jpg"
+                src="assets/imgs/hero-sliders/slider4.jpg"
                 alt="slider4"
               />
               <img
                 class="swiper-slide"
-                src="/assets/imgs/hero-sliders/slider5.jpg"
+                src="assets/imgs/hero-sliders/slider5.jpg"
                 alt="slider5"
               />
               <img
                 class="swiper-slide"
-                src="/assets/imgs/hero-sliders/slider6.jpg"
+                src="assets/imgs/hero-sliders/slider6.jpg"
                 alt="slider6"
               />
               <img
                 class="swiper-slide"
-                src="/assets/imgs/hero-sliders/slider7.jpg"
+                src="assets/imgs/hero-sliders/slider7.jpg"
                 alt="slider7"
               />
             </div>
@@ -211,99 +220,90 @@
       </section>
       <section id="services" class="section services__section">
         <div class="section__heading">
-          <h1><i class="fa-solid fa-briefcase"></i>nos services</h1>
-          <h3>Qu'est-ce que nous offrons ?</h3>
+          <h1><i class="fa-solid fa-briefcase"></i>Onze Diensten</h1>
+          <h3>Wat Bieden Wij Aan?</h3>
         </div>
         <div class="cards">
           <div class="card">
-            <span
-              ><img
-                src="/assets/imgs/services/app-development.png"
-                alt="Développement de logiciels"
-            /></span>
+            <img
+              src="assets/imgs/services/app-development.jpg"
+              alt="Développement de logiciels"
+            />
+            <div class="card__text">
+              <h1 class="lang" key="services-logiciels-heading">
+                Softwareontwikkeling
+              </h1>
+              <p class="lang" key="content">
+                Wij ontwerpen, creëren en implementeren op maat gemaakte
+                softwareoplossingen voor web-, mobiele- en desktoptoepassingen.
+              </p>
+            </div>
+          </div>
 
-            <h2 class="lang" key="services-logiciels-heading">
-              Développement de logiciels
-            </h2>
-            <!-- </div> -->
-
-            <p class="lang" key="content">
-              Nous concevons, créons et mettons en œuvre des solutions
-              logicielles personnalisées pour les applications web, mobiles et
-              de bureau.
-            </p>
+          <div class="card reverse">
+            <img
+              src="assets/imgs/services/mobile-dev.jpg"
+              alt="Mobiele Applicatieontwikkeling"
+            />
+            <div class="card__text">
+              <h1 class="lang" key="heading">Mobiele Applicaties</h1>
+              <p class="lang" key="content">
+                Wij ontwikkelen mobiele applicaties voor iOS en Android,
+                ontworpen voor het grote publiek of intern gebruikt binnen uw
+                organisatie.
+              </p>
+            </div>
           </div>
           <div class="card">
-            <span>
-              <img
-                src="/assets/imgs/services/mobile-dev.png"
-                alt="Développement des applications"
-            /></span>
-
-            <h2 class="lang" key="heading">Applications mobiles</h2>
-            <p class="lang" key="content">
-              Nous créons des applications mobiles pour iOS et Android,
-              destinées au grand public ou utilisées en interne par votre
-              organisation.
-            </p>
+            <img
+              src="assets/imgs/services/landing-page.jpg"
+              alt="Websiteontwikkeling"
+            />
+            <div class="card__text">
+              <h1>Websiteontwikkeling</h1>
+              <p>
+                Wij ontwerpen en ontwikkelen professionele websites, inclusief
+                showcases, e-commerce platforms, blogs en bedrijfsportalen.
+              </p>
+            </div>
           </div>
-          <div class="card">
-            <span>
-              <img
-                src="/assets/imgs/services/landing-page.png"
-                alt="Développement de logiciels"
-            /></span>
-
-            <h2>Développement de sites web</h2>
-            <p>
-              Nous concevons et développons des sites web professionnels,
-              incluant des vitrines, des plateformes de commerce électronique,
-              des blogs et des portails d'entreprise.
-            </p>
+          <div class="card reverse">
+            <img
+              src="assets/imgs/services/ecommerce.jpg"
+              alt="E-commerce ontwikkeling"
+            />
+            <div class="card__text">
+              <h1>E-commerce</h1>
+              <p>
+                Wij ontwerpen en ontwikkelen op maat gemaakte e-commerce
+                platforms, met functies zoals winkelwagentjes, veilige online
+                betalingen en voorraadbeheer.
+              </p>
+            </div>
           </div>
-          <div class="card">
-            <span>
-              <img
-                src="/assets/imgs/services/ecommerce.png"
-                alt="Développement de logiciels"
-            /></span>
 
-            <h2>e-commerce électronique</h2>
-            <p>
-              Nous concevons et développons des plateformes de commerce
-              électronique personnalisées, avec des fonctionnalités telles que
-              les paniers d'achat, les paiements en ligne sécurisés et la
-              gestion des stocks.
-            </p>
+          <div class="card">
+            <img src="assets/imgs/services/crm.jpg" alt="Systeemintegratie" />
+            <div class="card__text">
+              <h1>Systeemintegratie</h1>
+              <p>
+                Wij zorgen voor de integratie van verschillende software
+                systemen, zoals CRMs, HRMs en boekhoudsystemen, voor een soepele
+                communicatie en synchronisatie van gegevens.
+              </p>
+            </div>
           </div>
-          <div class="card">
-            <span>
-              <img
-                src="/assets/imgs/services/crm.png"
-                alt="Développement de logiciels"
-            /></span>
-
-            <h2>Intégration de systèmes</h2>
-            <p>
-              Nous assurons l'intégration de différents systèmes logiciels, tels
-              que les CRM, les GRH et les systèmes de comptabilité, pour une
-              communication fluide et une synchronisation des données.
-            </p>
-          </div>
-          <div class="card">
-            <span>
-              <img
-                src="/assets/imgs/services/ui-design.png"
-                alt="Développement de logiciels"
-            /></span>
-
-            <h2>Conception UX/UI</h2>
-            <p>
-              Nous offrons également des services de conception d'expérience
-              utilisateur (UX) et d'interface utilisateur (UI), garantissant des
-              interfaces intuitives, esthétiques et conviviales pour vos
-              applications et sites web.
-            </p>
+          <div class="card reverse">
+            <img src="assets/imgs/services/ui-design.jpg" alt="UX/UI Ontwerp" />
+            <div class="card__text">
+              <h1>UX/UI Ontwerp</h1>
+              <p>
+                We bieden ook diensten voor gebruikerservaring (UX) en
+                gebruikersinterface (UI) ontwerp, waarbij intuïtieve,
+                esthetische en gebruiksvriendelijke interfaces worden
+                gegarandeerd voor uw applicaties en websites.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -319,27 +319,31 @@
         </div>
         <div class="section__wrapper">
           <div class="section__heading">
-            <h1><i class="fa-solid fa-pen-nib"></i>Notre processus</h1>
-            <h3>Comment le processus se déroule-t-il ?</h3>
+            <
+            <h1><i class="fa-solid fa-pen-nib"></i>Ons Proces</h1>
+            <h3>Hoe Verloopt Het Proces?</h3>
           </div>
           <div class="steps">
             <div class="step__card">
               <img
-                class="steps__icon"
-                src="/assets/imgs/steps/consultation.png"
+                class="step__img"
+                src="assets/imgs/steps/consultation.jpg"
                 alt=""
               />
-              <h3>Découverte et Consultation :</h3>
-              <ul class="steps__text">
-                <li>
-                  Nous entamons des discussions détaillées avec nos clients pour
-                  comprendre leurs objectifs, leurs exigences et leur vision.
-                </li>
-                <li>
-                  Nous réalisons une analyse approfondie de leur public cible,
-                  des tendances de l'industrie et de leurs concurrents.
-                </li>
-              </ul>
+              <div class="step__heading">
+                <h3>Ontdekking en Consultatie:</h3>
+                <ul class="step__text">
+                  <li>
+                    We voeren gedetailleerde discussies met onze klanten om hun
+                    doelen, eisen en visie te begrijpen.
+                  </li>
+                  <li>
+                    We voeren een diepgaande analyse uit van hun doelgroep,
+                    trends in de branche en concurrenten.
+                  </li>
+                </ul>
+              </div>
+
               <span class="step__number">1</span>
             </div>
             <div class="arrow">
@@ -350,22 +354,24 @@
 
             <div class="step__card">
               <img
-                class="steps__icon"
-                src="/assets/imgs/steps/planning.png"
+                class="step__img"
+                src="assets/imgs/steps/planning.jpg"
                 alt="planning"
               />
-              <h3>Stratégie et Planification :</h3>
-              <ul class="steps__text">
-                <li>
-                  En nous basant sur les informations recueillies, nous
-                  élaborons une stratégie complète adaptée aux objectifs du
-                  client.
-                </li>
-                <li>
-                  Nous créons une feuille de route du projet, détaillant les
-                  étapes clés, les livrables et les délais.
-                </li>
-              </ul>
+              <div class="step__heading">
+                <h3>Strategie en Planning:</h3>
+                <ul class="step__text">
+                  <li>
+                    Op basis van de verzamelde informatie ontwikkelen we een
+                    uitgebreide strategie die is afgestemd op de doelen van de
+                    klant.
+                  </li>
+                  <li>
+                    We stellen een projectroadmap op met belangrijke mijlpalen,
+                    opleveringen en tijdslijnen.
+                  </li>
+                </ul>
+              </div>
               <span class="step__number">2</span>
             </div>
             <div class="arrow">
@@ -376,23 +382,25 @@
 
             <div class="step__card">
               <img
-                class="steps__icon"
-                src="/assets/imgs/steps/design.png"
+                class="step__img"
+                src="assets/imgs/steps/design.jpg"
                 alt="design"
               />
-              <h3>Conception et Conceptualisation :</h3>
-              <ul class="steps__text">
-                <li>
-                  Nos talentueux designers collaborent étroitement avec le
-                  client pour créer des concepts de design attrayants et centrés
-                  sur l'utilisateur.
-                </li>
-                <li>
-                  Nous nous concentrons sur la création d'expériences
-                  utilisateur intuitives qui correspondent à l'identité de
-                  marque du client.
-                </li>
-              </ul>
+              <div class="step__heading">
+                <h3>Ontwerp en Conceptualisatie:</h3>
+                <ul class="step__text">
+                  <li>
+                    Onze getalenteerde ontwerpers werken nauw samen met de klant
+                    om aantrekkelijke en gebruikersgerichte ontwerpsconcepten te
+                    creëren.
+                  </li>
+                  <li>
+                    We richten ons op het ontwerpen van intuïtieve
+                    gebruikerservaringen die in lijn zijn met de merkidentiteit
+                    van de klant.
+                  </li>
+                </ul>
+              </div>
               <span class="step__number">3</span>
             </div>
             <div class="arrow">
@@ -400,24 +408,28 @@
               <span></span>
               <span></span>
             </div>
+
             <div class="step__card">
               <img
-                class="steps__icon"
-                src="/assets/imgs/steps/development.png"
+                class="step__img"
+                src="assets/imgs/steps/development.jpg"
                 alt="development"
               />
-              <h3>Développement et Mise en œuvre :</h3>
-              <ul class="steps__text">
-                <li>
-                  Nos développeurs qualifiés donnent vie aux concepts de design
-                  en utilisant les dernières technologies et les meilleures
-                  pratiques de l'industrie.
-                </li>
-                <li>
-                  Nous assurons une fonctionnalité fluide, une compatibilité
-                  mobile et une compatibilité avec tous les navigateurs.
-                </li>
-              </ul>
+              <div class="step__heading">
+                <h3>Ontwikkeling en Implementatie:</h3>
+                <ul class="step__text">
+                  <li>
+                    Onze vaardige ontwikkelaars brengen ontwerpsconcepten tot
+                    leven met behulp van de nieuwste technologieën en best
+                    practices uit de industrie.
+                  </li>
+                  <li>
+                    We zorgen voor soepele functionaliteit, mobiele
+                    compatibiliteit en compatibiliteit met verschillende
+                    browsers.
+                  </li>
+                </ul>
+              </div>
               <span class="step__number">4</span>
             </div>
             <div class="arrow">
@@ -428,23 +440,24 @@
 
             <div class="step__card">
               <img
-                class="steps__icon"
-                src="/assets/imgs/steps/testing.png"
+                class="step__img"
+                src="assets/imgs/steps/testing.jpg"
                 alt="testing"
               />
-              <h3>Tests et Assurance Qualité :</h3>
-              <ul class="steps__text">
-                <li>
-                  Nous effectuons des tests rigoureux sur les solutions
-                  développées afin d'identifier et de résoudre tout
-                  dysfonctionnement, problème d'utilisabilité ou de performance.
-                </li>
-                <li>
-                  Des processus d'assurance qualité sont mis en œuvre pour
-                  garantir que le produit final répond aux normes les plus
-                  élevées.
-                </li>
-              </ul>
+              <div class="step__heading">
+                <h3>Testen en Kwaliteitsborging:</h3>
+                <ul class="step__text">
+                  <li>
+                    We voeren grondige tests uit op de ontwikkelde oplossingen
+                    om eventuele storingen, bruikbaarheidsproblemen of
+                    prestatieproblemen te identificeren en op te lossen.
+                  </li>
+                  <li>
+                    Kwaliteitsborgingsprocessen worden geïmplementeerd om ervoor
+                    te zorgen dat het eindproduct voldoet aan de hoogste normen.
+                  </li>
+                </ul>
+              </div>
               <span class="step__number">5</span>
             </div>
             <div class="arrow">
@@ -454,24 +467,28 @@
             </div>
             <div class="step__card">
               <img
-                class="steps__icon"
-                src="/assets/imgs/steps/deployment.png"
+                class="step__img"
+                src="assets/imgs/steps/deployment.jpg"
                 alt="deployment"
               />
-              <h3>Lancement et Déploiement :</h3>
-              <ul class="steps__text">
-                <li>
-                  Une fois que le client approuve le produit final, nous
-                  l'aidons à le déployer sur les plateformes ou serveurs
-                  souhaités.
-                </li>
-                <li>
-                  Nous assurons une transition fluide et fournissons toute
-                  formation ou support nécessaire pendant la phase de lancement.
-                </li>
-              </ul>
+              <div class="step__heading">
+                <h3>Lancering en Implementatie:</h3>
+                <ul class="step__text">
+                  <li>
+                    Zodra de klant het definitieve product goedkeurt, helpen we
+                    hen bij het implementeren ervan op de gewenste platforms of
+                    servers.
+                  </li>
+                  <li>
+                    We zorgen voor een soepele overgang en bieden eventuele
+                    benodigde training of ondersteuning tijdens de
+                    lanceringsfase.
+                  </li>
+                </ul>
+              </div>
               <span class="step__number">6</span>
             </div>
+
             <div class="arrow">
               <span></span>
               <span></span>
@@ -480,23 +497,25 @@
 
             <div class="step__card">
               <img
-                class="steps__icon"
-                src="/assets/imgs/steps/maintenance.png"
+                class="step__img"
+                src="assets/imgs/steps/maintenance.jpg"
                 alt="maintenance"
               />
-              <h3>Assistance et Maintenance :</h3>
-              <ul class="steps__text">
-                <li>
-                  Notre engagement va au-delà du lancement. Nous offrons un
-                  support continu, une maintenance et des mises à jour pour
-                  assurer des performances optimales du produit.
-                </li>
-                <li>
-                  Nous surveillons les analyses et les retours des utilisateurs
-                  pour identifier les domaines d'amélioration et mettre en œuvre
-                  les améliorations nécessaires.
-                </li>
-              </ul>
+              <div class="step__heading">
+                <h3>Ondersteuning en Onderhoud:</h3>
+                <ul class="step__text">
+                  <li>
+                    Onze betrokkenheid gaat verder dan de lancering. We bieden
+                    voortdurende ondersteuning, onderhoud en updates om optimale
+                    productprestaties te garanderen.
+                  </li>
+                  <li>
+                    We volgen analyses en gebruikersfeedback om gebieden voor
+                    verbetering te identificeren en noodzakelijke verbeteringen
+                    door te voeren.
+                  </li>
+                </ul>
+              </div>
               <span class="step__number">7</span>
             </div>
           </div>
@@ -504,35 +523,37 @@
       </section>
       <section id="contact" class="section contact__section">
         <div class="section__heading">
-          <h1><i class="fa-solid fa-phone"></i>CONTACTEZ-NOUS</h1>
-          <h3>Faites-nous savoir comment nous pouvons vous aider.</h3>
+          <h1><i class="fa-solid fa-phone"></i>Contacteer Ons</h1>
+          <h3>Laat ons weten hoe we u kunnen helpen.</h3>
         </div>
 
         <div class="contact__wrapper">
           <div class="contact__box">
             <i class="fa-solid fa-envelope"></i>
-            <h3>Envoyez-nous un e-mail</h3>
-            <p>Communiquez avec notre équipe bienveillante.</p>
+            <h3>Stuur ons een e-mail</h3>
+            <p>Neem contact op met ons vriendelijke team.</p>
             <a href="mailto:admin@sodevtherealworld.com"
               >admin@sodevtherealworld.com</a
             >
           </div>
           <div class="contact__box">
             <i class="fa-solid fa-location-dot"></i>
-            <h3>Visitez-nous</h3>
-            <p>Visitez notre bureau pour discuter.</p>
+            <h3>Bezoek Ons</h3>
+            <p>Bezoek ons kantoor voor een gesprek.</p>
             <a
               href="https://www.google.com/maps/place/35%C2%B046'16.6%22N+5%C2%B048'01.6%22W/@35.7712863,-5.8026203,17z/data=!3m1!4b1!4m4!3m3!8m2!3d35.7712863!4d-5.8004316?entry=ttu"
               target="_blank"
             >
-              12 av Driss 1er, immeuble Tanger Office Centre, 2ème étage n°18,
-              Tanger
+              12 AV Driss 1<sup>st</sup>, Tanger Office Centre Building, 2<sup
+                >nd</sup
+              >
+              floor °18, Tanger
             </a>
           </div>
           <div class="contact__box">
             <i class="fa-solid fa-phone"></i>
-            <h3>Appelez-nous</h3>
-            <p>Contactez-nous pour découvrir nos offres.</p>
+            <h3>Bel Ons</h3>
+            <p>Neem contact met ons op om onze aanbiedingen te ontdekken.</p>
             <a href="https://wa.me/2120661104186" target="_blank"
               >(+212) 06 61 10 41 86</a
             >
@@ -565,37 +586,42 @@
         <div class="footer__section-one">
           <img
             class="logo__white"
-            src="/assets/imgs/LOGO-white.svg"
+            src="assets/imgs/LOGO-white.svg"
             alt="Sodev Logo"
           />
           <p>
-            <strong>SODEV</strong> une entreprise dynamique tournée vers
-            l'avenir, nous nous adaptons en permanence au paysage changeant de
-            l'ère numérique.
+            <strong>SODEV</strong>, een dynamisch bedrijf gericht op de
+            toekomst, past zich voortdurend aan aan het steeds veranderende
+            landschap van het digitale tijdperk.
           </p>
+
           <span class="space"></span>
           <ul>
-            <a href="#hero"><li>accueil</li></a>
-            <a href="#services"><li>services</li></a>
-            <a href="#steps"><li>processus</li></a>
-            <a href="#contact"><li>contact</li></a>
+            <a href="#hero"><li>Startpagina</li></a>
+            <a href="#services"><li>Diensten</li></a>
+            <a href="#steps"><li>Proces</li></a>
+            <a href="#contact"><li>Contact</li></a>
           </ul>
-          <!-- <img class="wave__one" src="/assets//imgs//wave1.svg" alt="wave"> -->
         </div>
         <div class="footer__section-two">
           <div class="address">
-            <span
-              ><i class="fa-solid fa-envelope"></i
-              >sodevtherealworld@gmail.com</span
-            >
-            <span
-              ><i class="fa-solid fa-location-dot"></i>12 av driss 1er immeuble
-              tanger office centre 2ème étage n°18 tanger</span
-            >
-            <span
-              ><i class="fa-solid fa-phone"></i>06 61 10 41 86 / 05 39 32 35
-              28</span
-            >
+            <div class="adress__mail">
+              <i class="fa-solid fa-envelope"></i>
+              <span>admin@sodevtherealworld.com</span>
+            </div>
+            <div class="adress__ad">
+              <i class="fa-solid fa-location-dot"></i
+              ><span
+                >12 AV Driss 1<sup>e</sup> Tanger Office Centre Building, 2<sup
+                  >de</sup
+                >
+                verdieping °18, Tanger</span
+              >
+            </div>
+            <div class="adress__phone">
+              <i class="fa-solid fa-phone"></i>
+              <span>06 61 10 41 86 / 05 39 32 35 28</span>
+            </div>
           </div>
           <div class="social-media__links">
             <a target="_blank" href="https://facebook.com/sodevtherealworld/"
@@ -607,7 +633,7 @@
               ><span class="tooltip">instagram</span></a
             >
             <a target="_blank" href="https://www.twitter.com"
-              ><i class="fa-brands fa-twitter"></i
+              ><i class="fa-brands fa-x-twitter"></i
               ><span class="tooltip">twitter</span></a
             >
             <a target="_blank" href="https://wa.me/2120661104186"
@@ -617,10 +643,10 @@
           </div>
         </div>
         <div class="dev__team">
-          <span class="copyrights">copyrights ©2023</span>
-          <span class="tag"
-            >made with <i class="fa-solid fa-heart"></i> by SODEV team</span
+          <span class="copyrights"
+            >auteursrechten ©<span class="copyrights__date">2023</span></span
           >
+          <span class="tag">Gemaakt door het <strong>SODEV</strong>-team</span>
         </div>
       </div>
     </footer>
@@ -628,7 +654,7 @@
       <div class="loader-icon">
         <img
           class="loader__logo"
-          src="/assets/imgs/logo-loader.png"
+          src="assets/imgs/logo-loader.png"
           alt="sodev logo"
         />
         <p>SODEV ...</p>
@@ -636,9 +662,6 @@
     </div>
     <div class="to__top">
       <a href="#hero"><i class="fa-solid fa-arrow-up"></i></a>
-    </div>
-    <div class="show__button">
-      <i class="fa-solid fa-bars"></i>
     </div>
   </body>
   <!--========== Fontawesome ==========-->
@@ -649,5 +672,5 @@
   <!--========== Swiper ==========-->
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <!--========== Main Js ==========-->
-  <script type="module" src="/assets/javascript/script.js"></script>
+  <script src="assets/javascript/script.js"></script>
 </html>
