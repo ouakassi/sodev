@@ -41,10 +41,22 @@ nav ul i,
   border-radius: 10% 0% 0% 10% / 100% 0% 0% 100%;
 }
 
+.section__heading i {
+  margin-left: 2rem;
+  margin-right: 0;
+}
+
 .to__top a {
-  padding: 1rem 2rem;
+  padding: 0.8rem 1.6rem;
 }
 
 footer .adress__phone {
   font-family: var(--font-6);
+}
+
+@media screen and (max-width: 769px) {
+  .languages__list {
+    left: unset;
+    right: 0;
+  }
 }

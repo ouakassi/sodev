@@ -38,11 +38,22 @@ const languagesSelector = document.querySelector(".languages__selector");
 const languagesList = document.querySelector(".languages__list");
 
 languagesSelector.addEventListener("click", () => {
-  languagesList.classList.toggle("visible");
+  languagesList.classList.toggle("show__dropdown");
 });
 
 languagesSelector.addEventListener("blur", () => {
-  languagesList.classList.remove("visible");
+  languagesList.classList.remove("show__dropdown");
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const selector = document.querySelector(".languages__selector");
+  const list = document.querySelector(".languages__list");
+
+  document.addEventListener("click", function (event) {
+    if (!selector.contains(event.target) && !list.contains(event.target)) {
+      list.classList.remove("show__dropdown");
+    }
+  });
 });
 // ------------------ responssive navbar --------- //
 

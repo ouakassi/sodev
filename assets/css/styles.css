@@ -276,7 +276,7 @@ nav a:hover i {
   cursor: pointer;
 }
 .languages__icon {
-  width: 2.5rem;
+  width: 3rem;
   transition: 0.2s;
 }
 
@@ -310,7 +310,7 @@ nav a:hover i {
   border-radius: inherit;
   transform: scale(1.2);
 }
-.languages__list.visible {
+.languages__list.show__dropdown {
   visibility: visible;
   top: calc(var(--header-height) - 1rem);
   opacity: 1;
@@ -986,6 +986,19 @@ main {
     width: 100%;
     /* height: 0; */
     background: var(--container-bg-color);
+  }
+
+  .languages {
+    position: fixed;
+    bottom: 12%;
+    right: 6%;
+    margin: auto;
+  }
+
+  .languages__list.show__dropdown {
+    visibility: visible;
+    top: -22rem;
+    opacity: 1;
   }
 
   .header__logo {
