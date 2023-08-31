@@ -40,20 +40,59 @@
           <img src="assets/imgs/LOGO-black.png" alt="sodev-logo" />
           <div><span>SODEV</span> <span>the real world</span></div>
         </a>
-        <ul>
+        <ul class="header__list">
           <li>
-            <a href="#hero"><i class="fa-solid fa-house"></i>accueil</a>
+            <a href="#hero"><i class="bi bi-house-fill"></i>accueil</a>
+          </li>
+          <li class="services__item">
+            <a class="services__dropdown-button"
+              ><i class="bi bi-briefcase"></i>services
+              <i id="dropdown__icon" class="bi bi-caret-down"></i
+            ></a>
+
+            <ul class="services__dropdown-list">
+              <li>
+                <a href="pages/developpement-de-logiciels.html"
+                  ><img src="assets/imgs/header/dev.png" alt="" />Développement
+                  de logiciels</a
+                >
+              </li>
+              <ul>
+                <a href="">
+                  <img src="assets/imgs/header/mobile.png" alt="" />
+                  Applications mobiles
+                </a>
+              </ul>
+              <ul>
+                <a href=""
+                  ><img src="assets/imgs/header/web.png" alt="" />Développement
+                  de sites web
+                </a>
+              </ul>
+              <ul>
+                <a href=""
+                  ><img src="assets/imgs/header/ecomm.png" alt="" />E-commerce
+                </a>
+              </ul>
+              <ul>
+                <a href=""
+                  ><img src="assets/imgs/header/system.png" alt="" />Intégration
+                  de systèmes</a
+                >
+              </ul>
+              <ul>
+                <a href=""
+                  ><img src="assets/imgs/header/ux-ui.png" alt="" />Conception
+                  UX/UI</a
+                >
+              </ul>
+            </ul>
           </li>
           <li>
-            <a href="#services"
-              ><i class="fa-solid fa-briefcase"></i>services</a
-            >
+            <a href="#steps"><i class="bi bi-bar-chart-steps"></i>processus</a>
           </li>
           <li>
-            <a href="#steps"><i class="fa-solid fa-pen-nib"></i>processus</a>
-          </li>
-          <li>
-            <a href="#contact"><i class="fa-solid fa-phone"></i>contact</a>
+            <a href="#contact"><i class="bi bi-telephone-fill"></i>contact</a>
           </li>
         </ul>
         <div class="languages">
@@ -101,10 +140,10 @@
         </div>
 
         <div class="close__button">
-          <i class="fa-regular fa-circle-xmark"></i>
+          <i class="bi bi-x-circle"></i>
         </div>
         <div class="show__button">
-          <i class="fa-solid fa-bars"></i>
+          <i class="bi bi-justify"></i>
         </div>
       </nav>
     </header>
@@ -112,63 +151,35 @@
     <main>
       <section id="hero" class="section hero__section">
         <div class="hero__text">
-          <!-- <div class="logo__container">
-            <img
-              class="logo"
-              src="assets/imgs/LOGO-black.svg"
-              alt="sodev-logo"
-            />
-            <span>creativity & services</span>
-          </div> -->
-
-          <!-- <h1>welcome to the real world</h1> -->
           <h1>"LE SERVICE NUMÉRIQUE QUE VOUS DÉSIREZ"</h1>
 
-          <!-- <p>
-            Nous élaborons des stratégies efficaces pour vous aider à atteindre
-            les clients et les prospects sur l'ensemble du web.
-          </p> -->
           <ul class="objectifs">
-            <!-- <li class="objectif">
-              <i class="fa-regular fa-square-check"></i>transformation numérique
-            </li> -->
             <li class="objectif">
-              <i class="fa-regular fa-square-check"></i>software développement
+              <i class="bi bi-check2-square"></i>software développement
             </li>
             <li class="objectif">
-              <i class="fa-regular fa-square-check"></i>développement des
-              logiciels sur mesure
+              <i class="bi bi-check2-square"></i>développement des logiciels sur
+              mesure
             </li>
             <li class="objectif">
-              <i class="fa-regular fa-square-check"></i>développement
-              d'applications mobiles
+              <i class="bi bi-check2-square"></i>développement d'applications
+              mobiles
             </li>
-            <!-- <li class="objectif">
-              <i class="fa-regular fa-square-check"></i>conseil en gestion des
-              projets
-            </li> -->
-            <!-- <li class="objectif">
-              <i class="fa-regular fa-square-check"></i>e-commerce
-            </li> -->
-            <!-- <li class="objectif">
-              <i class="fa-regular fa-square-check"></i>digitalisation des
+
+            <li class="objectif">
+              <i class="bi bi-check2-square"></i>Conseil en digitalisation Des
               entreprises
-            </li> -->
-            <li class="objectif">
-              <i class="fa-regular fa-square-check"></i>Conseil en
-              digitalisation Des entreprises
             </li>
             <li class="objectif">
-              <i class="fa-regular fa-square-check"></i>conception graphique
+              <i class="bi bi-check2-square"></i>conception graphique
             </li>
             <li class="objectif">
-              <i class="fa-regular fa-square-check"></i>intelligence
-              artificielle
+              <i class="bi bi-check2-square"></i>intelligence artificielle
             </li>
           </ul>
           <a href="#contact" role="button" class="button"
-            ><i class="fa-solid fa-phone"></i> Nous contacter ?</a
-          >
+            ><i class="bi bi-telephone-fill"></i> Contactez-nous
+          </a>
         </div>
         <div class="hero__slider">
           <div class="swiper hero__swiper">
@@ -212,17 +223,17 @@
             </div>
             <div class="swiper-pagination"></div>
             <div tabindex="1" class="hero__swiper-button-prev">
-              <i class="fa-solid fa-caret-left"></i>
+              <i class="bi bi-arrow-left-circle-fill"></i>
             </div>
             <div tabindex="2" class="hero__swiper-button-next">
-              <i class="fa-solid fas fa-caret-right"></i>
+              <i class="bi bi-arrow-right-circle-fill"></i>
             </div>
           </div>
         </div>
       </section>
       <section id="services" class="section services__section">
         <div class="section__heading">
-          <h1><i class="fa-solid fa-briefcase"></i>nos services</h1>
+          <h1><i class="bi bi-briefcase"></i>nos services</h1>
           <h3>Qu'est-ce que nous offrons ?</h3>
         </div>
         <div class="cards">
@@ -329,7 +340,7 @@
         </div>
         <div class="section__wrapper">
           <div class="section__heading">
-            <h1><i class="fa-solid fa-pen-nib"></i>Notre processus</h1>
+            <h1><i class="bi bi-bar-chart-steps"></i>Notre processus</h1>
             <h3>Comment le processus se déroule-t-il ?</h3>
           </div>
           <div class="steps">
@@ -532,13 +543,13 @@
       </section>
       <section id="contact" class="section contact__section">
         <div class="section__heading">
-          <h1><i class="fa-solid fa-phone"></i>CONTACTEZ-NOUS</h1>
+          <h1><i class="bi bi-telephone-fill"></i>CONTACTEZ-NOUS</h1>
           <h3>Faites-nous savoir comment nous pouvons vous aider.</h3>
         </div>
 
         <div class="contact__wrapper">
           <div class="contact__box">
-            <i class="fa-solid fa-envelope"></i>
+            <i class="bi bi-envelope-fill"></i>
             <h3>Envoyez-nous un e-mail</h3>
             <p>Communiquez avec notre équipe bienveillante.</p>
             <a href="mailto:admin@sodevtherealworld.com"
@@ -546,7 +557,7 @@
             >
           </div>
           <div class="contact__box">
-            <i class="fa-solid fa-location-dot"></i>
+            <i class="bi bi-geo-alt-fill"></i>
             <h3>Visitez-nous</h3>
             <p>Visitez notre bureau pour discuter.</p>
             <a
@@ -560,7 +571,7 @@
             </a>
           </div>
           <div class="contact__box">
-            <i class="fa-solid fa-phone"></i>
+            <i class="bi bi-telephone-fill"></i>
             <h3>Appelez-nous</h3>
             <p>Contactez-nous pour découvrir nos offres.</p>
             <a href="https://wa.me/2120661104186" target="_blank"
@@ -614,11 +625,11 @@
         <div class="footer__section-two">
           <div class="address">
             <div class="adress__mail">
-              <i class="fa-solid fa-envelope"></i>
+              <i class="bi bi-envelope-fill"></i>
               <span>admin@sodevtherealworld.com</span>
             </div>
             <div class="adress__ad">
-              <i class="fa-solid fa-location-dot"></i
+              <i class="bi bi-geo-alt-fill"></i
               ><span
                 >12 AV driss 1<sup>er</sup> immeuble tanger office centre 2<sup
                   >ème</sup
@@ -627,25 +638,25 @@
               >
             </div>
             <div class="adress__phone">
-              <i class="fa-solid fa-phone"></i>
-              <span>06 61 10 41 86 / 05 39 32 35</span> 28
+              <i class="bi bi-telephone-fill"></i>
+              <span>06 61 10 41 86 / 05 39 32 35 28</span>
             </div>
           </div>
           <div class="social-media__links">
             <a target="_blank" href="https://facebook.com/sodevtherealworld/"
-              ><i class="fa-brands fa-facebook"></i
+              ><i class="bi bi-facebook"></i
               ><span class="tooltip">facebook</span></a
             >
             <a target="_blank" href="https://instagram.com/sodevtherealworld/"
-              ><i class="fa-brands fa-instagram"></i
+              ><i class="bi bi-instagram"></i
               ><span class="tooltip">instagram</span></a
             >
-            <a target="_blank" href="https://www.twitter.com"
+            <!-- <a target="_blank" href="https://www.twitter.com"
               ><i class="fa-brands fa-x-twitter"></i
               ><span class="tooltip">twitter</span></a
-            >
+            > -->
             <a target="_blank" href="https://wa.me/2120661104186"
-              ><i class="fa-brands fa-whatsapp"></i
+              ><i class="bi bi-whatsapp"></i
               ><span class="tooltip">whatsapp</span></a
             >
           </div>
@@ -669,16 +680,15 @@
       </div>
     </div>
     <div class="to__top">
-      <a href="#hero"><i class="fa-solid fa-arrow-up"></i></a>
+      <a href="#hero"><i class="bi bi-arrow-up-circle"></i></a>
     </div>
   </body>
-  <!--========== Fontawesome ==========-->
-  <script
-    src="https://kit.fontawesome.com/1d3b35f3ec.js"
-    crossorigin="anonymous"
-  ></script>
+
   <!--========== Swiper ==========-->
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <!--========== Main Js ==========-->
+  <script src="assets/javascript/swiper.js"></script>
+  <script src="assets/javascript/home.js"></script>
+  <script type="MIME" src="assets/javascript/loader.js"></script>
   <script src="assets/javascript/script.js"></script>
 </html>
