@@ -1307,6 +1307,10 @@ main {
   .footer__section-two {
     padding: 2rem;
   }
+
+  .to__top a {
+    padding: 0.6rem;
+  }
 }
 
 @media screen and (max-width: 321px) {

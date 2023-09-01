@@ -38,12 +38,48 @@
           <img src="assets/imgs/LOGO-black.png" alt="sodev-logo" />
           <div><span>SODEV</span> <span>العالم الحقيقي</span></div>
         </a>
-        <ul>
+        <ul class="header__list">
           <li>
             <a href="#hero"><i class="bi bi-house-fill"></i>الصفحة الرئيسية</a>
           </li>
-          <li>
-            <a href="#services"><i class="bi bi-briefcase"></i>الخدمات</a>
+          <li class="services__item">
+            <a class="services__dropdown-button"
+              ><i class="bi bi-briefcase"></i>خدماتنا
+              <i id="dropdown__icon" class="bi bi-caret-down"></i
+            ></a>
+            <ul class="services__dropdown-list">
+              <li>
+                <a href="pages/ar/developpement-de-logiciels.html"
+                  ><img src="assets/imgs/header/dev.png" alt="" />تطوير البرمجيات</a
+                >
+              </li>
+              <ul>
+                <a href="pages/ar/applications-mobiles.html">
+                  <img src="assets/imgs/header/mobile.png" alt="" />
+                  تطبيقات الجوّال
+                </a>
+              </ul>
+              <ul>
+                <a href="pages/ar/developpement-de-sites-web.html"
+                  ><img src="assets/imgs/header/web.png" alt="" />تطوير مواقع الويب
+                </a>
+              </ul>
+              <ul>
+                <a href="pages/ar/ecommerce.html"
+                  ><img src="assets/imgs/header/ecomm.png" alt="" />التجارة الإلكترونية
+                </a>
+              </ul>
+              <ul>
+                <a href="pages/ar/integration-de-systemes.html"
+                  ><img src="assets/imgs/header/system.png" alt="" />تكامل الأنظمة</a
+                >
+              </ul>
+              <ul>
+                <a href="pages/ar/conception-ux-ui.html"
+                  ><img src="assets/imgs/header/ux-ui.png" alt="" />تصميم الواجهات</a
+                >
+              </ul>
+            </ul>
           </li>
           <li>
             <a href="#steps"><i class="bi bi-bar-chart-steps"></i>مراحل التطوير</a>
@@ -52,7 +88,7 @@
             <a href="#contact"><i class="bi bi-telephone-fill"></i>تواصل معنا</a>
           </li>
         </ul>
-
+       
         <div class="languages">
           <span class="languages__selector">
             
@@ -100,6 +136,7 @@
           </div>
         </div>
 
+
         <div class="close__button">
           <i class="bi bi-x-circle"></i>
         </div>
@@ -109,29 +146,12 @@
       </nav>
     </header>
 
+
     <main>
       <section id="hero" class="section hero__section">
         <div class="hero__text">
-          <!-- <div class="logo__container">
-            <img
-              class="logo"
-              src="assets/imgs/LOGO-black.svg"
-              alt="sodev-logo"
-            />
-            <span>creativity & services</span>
-          </div> -->
-
-          <!-- <h1>welcome to the real world</h1> -->
           <h1>"الخدمة الرقمية التي ترغب فيها"</h1>
-
-          <!-- <p>
-            Nous élaborons des stratégies efficaces pour vous aider à atteindre
-            les clients et les prospects sur l'ensemble du web.
-          </p> -->
           <ul class="objectifs">
-            <!-- <li class="objectif">
-              <i class="bi bi-check2-square"></i>transformation numérique
-            </li> -->
             <li class="objectif">
               <i class="bi bi-check2-square"></i>تطوير البرمجيات
             </li>
@@ -141,17 +161,6 @@
             <li class="objectif">
               <i class="bi bi-check2-square"></i>تطوير تطبيقات الجوّال
             </li>
-            <!-- <li class="objectif">
-              <i class="bi bi-check2-square"></i>conseil en gestion des
-              projets
-            </li> -->
-            <!-- <li class="objectif">
-              <i class="bi bi-check2-square"></i>e-commerce
-            </li> -->
-            <!-- <li class="objectif">
-              <i class="bi bi-check2-square"></i>digitalisation des
-              entreprises
-            </li> -->
             <li class="objectif">
               <i class="bi bi-check2-square"></i>استشارات في تحويل
               الشركات الرقمية
@@ -289,7 +298,7 @@
               alt="تطوير البرمجيات"
             />
             <div class="card__text">
-              <h1>تصميم UX/UI</h1>
+              <h1>تصميم الواجهات</h1>
               <p>
                 نحن نقدم أيضًا خدمات تصميم تجربة المستخدم (UX) وتصميم واجهة المستخدم (UI)، مما يضمن واجهات بديهية وجميلة وسهلة الاستخدام لتطبيقاتك ومواقعك على الويب.
               </p>
@@ -594,10 +603,10 @@
               ><i class="bi bi-instagram"></i
               ><span class="tooltip">instagram</span></a
             >
-            <a target="_blank" href="https://www.twitter.com"
+           <!-- <a target="_blank" href="https://www.twitter.com"
               ><i class="fa-brands fa-x-twitter"></i
               ><span class="tooltip">twitter</span></a
-            >
+            > -->
             <a target="_blank" href="https://wa.me/2120661104186"
               ><i class="bi bi-whatsapp"></i
               ><span class="tooltip">whatsapp</span></a
@@ -628,8 +637,11 @@
     </div>
   </body>
 
-  <!--========== Swiper ==========-->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <!--========== Main Js ==========-->
-  <script src="assets/javascript/script.js"></script>
+    <!--========== Swiper ==========-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!--========== Main Js ==========-->
+    <script src="assets/javascript/swiper.js"></script>
+    <script src="assets/javascript/home.js"></script>
+    <script type="MIME" src="assets/javascript/loader.js"></script>
+    <script src="assets/javascript/script.js"></script>
 </html>

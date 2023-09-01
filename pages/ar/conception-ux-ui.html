@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تصميم الواجهات</title>
+    <meta
+      name="description"
+      content="سوديف، شركة ديناميّة متجهة نحو المستقبل، نتكيف باستمرار مع المشهد المتغير في عصر الرقمنة."
+    />
+    <meta property="og:title" content="Sodev" />
+    <meta
+      property="og:description"
+      content="سوديف، شركة ديناميّة متجهة نحو المستقبل"
+    />
+    <meta
+      property="og:image"
+      content="../../assets
+/imgs/LOGO-black.png"
+    />
+    <meta property="og:url" content="https://sodevtherealworld.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Sodev" />
+    <link rel="icon" type="image/x-icon" href="../../assets/imgs/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../assets/css/normalize.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../assets/css/styles-ar.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../assets/css/services.style.css"
+    />
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#" class="header__logo">
+          <img src="../../assets/imgs/LOGO-black.png" alt="sodev-logo" />
+          <div><span>SODEV</span> <span>العالم الحقيقي</span></div>
+        </a>
+        <ul class="header__list">
+          <li>
+            <a href="../../index-ar.html#hero"
+              ><i class="bi bi-house-fill"></i>الصفحة الرئيسية</a
+            >
+          </li>
+          <li class="services__item">
+            <a class="services__dropdown-button"
+              ><i class="bi bi-briefcase"></i>خدماتنا
+              <i id="dropdown__icon" class="bi bi-caret-down"></i
+            ></a>
+            <ul class="services__dropdown-list">
+              <li>
+                <a href="./developpement-de-logiciels.html"
+                  ><img src="../../assets/imgs/header/dev.png" alt="" />تطوير
+                  البرمجيات</a
+                >
+              </li>
+              <ul>
+                <a href="./applications-mobiles.html">
+                  <img src="../../assets/imgs/header/mobile.png" alt="" />
+                  تطبيقات الجوّال
+                </a>
+              </ul>
+              <ul>
+                <a href="./developpement-de-sites-web.html"
+                  ><img src="../../assets/imgs/header/web.png" alt="" />تطوير
+                  مواقع الويب
+                </a>
+              </ul>
+              <ul>
+                <a href="./ecommerce.html"
+                  ><img
+                    src="../../assets/imgs/header/ecomm.png"
+                    alt=""
+                  />التجارة الإلكترونية
+                </a>
+              </ul>
+              <ul>
+                <a href="./integration-de-systemes.html"
+                  ><img src="../../assets/imgs/header/system.png" alt="" />تكامل
+                  الأنظمة</a
+                >
+              </ul>
+              <ul>
+                <a href="./conception-ux-ui.html"
+                  ><img src="../../assets/imgs/header/ux-ui.png" alt="" />تصميم
+                  الواجهات</a
+                >
+              </ul>
+            </ul>
+          </li>
+          <li>
+            <a href="../../index-ar.html#steps"
+              ><i class="bi bi-bar-chart-steps"></i>مراحل التطوير</a
+            >
+          </li>
+          <li>
+            <a href="../../index-ar.html#contact"
+              ><i class="bi bi-telephone-fill"></i>تواصل معنا</a
+            >
+          </li>
+        </ul>
+
+        <div class="languages">
+          <span class="languages__selector">
+            <img
+              class="languages__icon"
+              src="../../assets/imgs/languages/ar.png"
+              alt="ar"
+            />
+          </span>
+          <div class="languages__list">
+            <a href="../conception-ux-ui.html">
+              <img
+                class="languages__icon"
+                src="../../assets/imgs/languages/fr.png"
+                alt="fr"
+              />
+              <span>الفرنسية</span>
+            </a>
+            <a href="../en/conception-ux-ui.html">
+              <img
+                class="languages__icon"
+                src="../../assets/imgs/languages/en.png"
+                alt="en"
+              />
+              <span>الإنجليزية</span>
+            </a>
+
+            <a href="../nl/conception-ux-ui.html">
+              <img
+                class="languages__icon"
+                src="../../assets/imgs/languages/nl.png"
+                alt="nl"
+              />
+              <span>الهولندية</span>
+            </a>
+            <a href="../de/conception-ux-ui.html">
+              <img
+                class="languages__icon"
+                src="../../assets/imgs/languages/de.png"
+                alt="de"
+              />
+              <span>الألمانية</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="close__button">
+          <i class="bi bi-x-circle"></i>
+        </div>
+        <div class="show__button">
+          <i class="bi bi-justify"></i>
+        </div>
+      </nav>
+    </header>
+    <main id="services__main">
+      <div class="service__header bg__img-ui"></div>
+      <h1 class="header__title">
+        تصميم تجربة المستخدم (UX) وواجهة المستخدم (UI)
+      </h1>
+      <section id="services" class="section service__page-section">
+        <p class="service__text-header">
+          تصميم تجربة المستخدم (UX) وواجهة المستخدم (UI) هو عملية حاسمة لإنشاء
+          منتجات رقمية جاذبة وسهلة الاستخدام وفعالة. فيما يلي بعض النقاط
+          الرئيسية التي يجب مراعاتها:
+        </p>
+
+        <div class="services__cards">
+          <div class="card">
+            <img
+              src="../../assets/imgs/services//ux-ui/user-research.jpg"
+              alt="تطوير البرمجيات"
+            />
+            <div class="card__text">
+              <h1 class="lang" key="services-logiciels-heading">
+                أبحاث المستخدمين
+              </h1>
+              <p class="lang" key="content">
+                فهم احتياجات المستخدمين وتفضيلاتهم وسلوكياتهم هو الخطوة الأولى.
+                وهذا يتضمن استطلاعات ومقابلات وتحليلات لإنشاء تجربة موجهة نحو
+                المستخدم.
+              </p>
+            </div>
+          </div>
+
+          <div class="card reverse">
+            <img
+              src="../../assets/imgs/services/ux-ui/personas-and-scenarios.jpg"
+              alt="تطوير البرمجيات"
+            />
+            <div class="card__text">
+              <h1 class="lang" key="services-logiciels-heading">
+                الشخصيات والسيناريوهات
+              </h1>
+              <p class="lang" key="content">
+                إنشاء شخصيات (ملفات تعريف مستخدمين وهمية) وسيناريوهات استخدام
+                يساعد على تصور كيفية تفاعل مستخدمين من مختلف الأنواع مع المنتج.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="../../assets/imgs/services/ux-ui/information-architecture.jpg"
+              alt="تطوير البرمجيات"
+            />
+            <div class="card__text">
+              <h1 class="lang" key="services-logiciels-heading">
+                هندسة المعلومات
+              </h1>
+              <p class="lang" key="content">
+                تنظيم المحتوى والميزات بشكل منطقي وبديهي يسهل عمليات الملاحة
+                والاكتشاف.
+              </p>
+            </div>
+          </div>
+          <div class="card reverse">
+            <img
+              src="../../assets/imgs/services/ux-ui/wireframes-and-prototypes.jpg"
+              alt="تطوير البرمجيات"
+            />
+            <div class="card__text">
+              <h1 class="lang" key="services-logiciels-heading">
+                السلكيات والنماذج الاولية
+              </h1>
+              <p class="lang" key="content">
+                السلكيات هي رسومات أساسية تمثل تخطيط العناصر على واجهة المستخدم،
+                بينما تسمح النماذج التفاعلية بالاختبار وتنقية التجربة قبل
+                التنفيذ الكامل.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="../../assets/imgs/services/ux-ui/user-testing.jpg"
+              alt="تطوير البرمجيات"
+            />
+            <div class="card__text">
+              <h1 class="lang" key="services-logiciels-heading">
+                اختبار المستخدمين
+              </h1>
+              <p class="lang" key="content">
+                اختبار مع المستخدمين الحقيقيين يساعد على تحديد مشكلات التجربة
+                وإجراء تحسينات استنادًا إلى ردود فعلهم وملاحظاتهم.
+              </p>
+            </div>
+          </div>
+
+          <div class="card reverse">
+            <img
+              src="../../assets/imgs/services/ux-ui/visual-design.jpg"
+              alt="تصميم الواجهة البصرية"
+            />
+            <div class="card__text">
+              <h1 class="lang" key="services-logiciels-heading">
+                تصميم الواجهة البصرية
+              </h1>
+              <p class="lang" key="content">
+                تصميم الواجهة البصرية يتعلق بمظهر المنتج. ويشمل ذلك الألوان
+                والخطوط والصور والأيقونات المستخدمة لإنشاء هوية بصرية متسقة.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="../../assets/imgs/services/ux-ui/visual-hierarchy.jpg"
+              alt="تصميم الواجهة البصرية"
+            />
+            <div class="card__text">
+              <h1 class="lang" key="services-logiciels-heading">
+                التسلسل البصري
+              </h1>
+              <p class="lang" key="content">
+                استخدام التصميم التوجيهي، والحجم، والألوان لتوجيه انتباه
+                المستخدم نحو العناصر الأكثر أهمية على واجهة المستخدم.
+              </p>
+            </div>
+          </div>
+
+          <div class="card reverse">
+            <img
+              src="../../assets/imgs/services/ux-ui/touch-friendly.jpg"
+              alt="تصميم الواجهة البصرية"
+            />
+            <div class="card__text">
+              <h1 class="lang" key="services-logiciels-heading">سهولة اللمس</h1>
+              <p class="lang" key="content">
+                يجب تصميم عناصر الواجهة لتكون سهلة الوصول والنقر عليها على شاشات
+                اللمس.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="../../assets/imgs/services/ux-ui/animation-and-transitions.jpg"
+              alt="تصميم الواجهة البصرية"
+            />
+            <div class="card__text">
+              <h1 class="lang" key="services-logiciels-heading">
+                الرسوم المتحركة والانتقالات
+              </h1>
+              <p class="lang" key="content">
+                الرسوم المتحركة الخفيفة والانتقالات السلسة يمكن أن تعزز تجربة
+                المستخدم من خلال جعل التفاعلات تبدو أكثر طبيعية.
+              </p>
+            </div>
+          </div>
+
+          <div class="card reverse">
+            <img
+              src="../../assets/imgs/services/ux-ui/consistency.jpg"
+              alt="تصميم الواجهة البصرية"
+            />
+            <div class="card__text">
+              <h1 class="lang" key="services-logiciels-heading">التناسق</h1>
+              <p class="lang" key="content">
+                استخدام عناصر التصميم المتسقة مثل الأزرار والأيقونات والألوان
+                لإنشاء تجربة موحدة.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="../../assets/imgs/services/ux-ui/accessibility.jpg"
+              alt="تصميم الواجهة البصرية"
+            />
+            <div class="card__text">
+              <h1 class="lang" key="services-logiciels-heading">التوفر</h1>
+              <p class="lang" key="content">
+                التصميم مع مراعاة التوفر للمستخدمين ذوي الاحتياجات الخاصة، مثل
+                ذوي الإعاقة البصرية أو الإعاقات الحركية.
+              </p>
+            </div>
+          </div>
+
+          <div class="card reverse">
+            <img
+              src="../../assets/imgs/services/ux-ui/usability-testing.jpg"
+              alt="Développement de logiciels"
+            />
+            <div class="card__text">
+              <h1 class="lang" key="services-logiciels-heading">
+                Usability Testing
+              </h1>
+              <p class="lang" key="content">
+                Usability testing for UI design helps ensure that elements are
+                intuitive and work as intended.
+              </p>
+            </div>
+          </div>
+        </div>
+        <p class="service__text-footer">
+          في الختام، تهدف تصميم الواجهة وتجربة المستخدم (UX/UI) إلى إنشاء منتجات
+          رقمية توفر تجربة مستخدم ممتعة، سهلة الاستخدام، وفعّالة. تتطلب هذه
+          العملية مزيجًا من المهارات في البحث، وتصميم الرسومات، وعلم نفس
+          المستخدم لإنشاء منتجات تلبي احتياجات وتوقعات المستخدمين.
+        </p>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="wave__container">
+        <svg
+          width="100%"
+          height="100%"
+          id="svg"
+          viewBox="0 0 1440 390"
+          xmlns="http://www.w3.org/2000/svg"
+          class="transition duration-300 ease-in-out delay-150"
+        >
+          <path
+            d="M 0,400 C 0,400 0,200 0,200 C 115.35714285714289,169 230.71428571428578,138 335,128 C 439.2857142857142,118 532.4999999999998,129.00000000000003 674,157 C 815.5000000000002,184.99999999999997 1005.2857142857144,230 1141,240 C 1276.7142857142856,250 1358.3571428571427,225 1440,200 C 1440,200 1440,400 1440,400 Z"
+            stroke="none"
+            stroke-width="0"
+            fill="#000000"
+            fill-opacity="1"
+            class="transition-all duration-300 ease-in-out delay-150 path-0"
+          ></path>
+        </svg>
+      </div>
+      <div class="footer__wrapper">
+        <div class="footer__section-one">
+          <img
+            class="logo__white"
+            src="../../assets/imgs/LOGO-white.svg"
+            alt="Sodev Logo"
+          />
+          <p>
+            <strong>SODEV</strong> شركة ديناميكية موجهة نحو المستقبل، تتكيف
+            باستمرار مع المشهد المتغير باستمرار لعصر الرقميات.
+          </p>
+
+          <span class="space"></span>
+          <ul>
+            <a href="../../index-ar.html#hero"><li>الرئيسية</li></a>
+            <a href="../../index-ar.html#services"><li>الخدمات</li></a>
+            <a href="../../index-ar.html#steps"><li>العملية</li></a>
+            <a href="../../index-ar.html#contact"><li>اتصل بنا</li></a>
+          </ul>
+        </div>
+        <div class="footer__section-two">
+          <div class="address">
+            <div class="adress__mail">
+              <i class="bi bi-envelope-fill"></i>
+              <span>admin@sodevtherealworld.com</span>
+            </div>
+            <div class="adress__ad">
+              <i class="bi bi-geo-alt-fill"></i>
+              <span>
+                12 شارع إدريس <sup>الأول</sup>, مركز مكاتب طنجة، الطابق
+                <sup>التاني</sup> رقم 18، طنجة</span
+              >
+            </div>
+
+            <div class="adress__phone">
+              <i class="bi bi-telephone-fill"></i>
+              <span> 86 41 10 61 06 /28 35 32 39 05</span>
+            </div>
+          </div>
+          <div class="social-media__links">
+            <a target="_blank" href="https://facebook.com/sodevtherealworld/"
+              ><i class="bi bi-facebook"></i
+              ><span class="tooltip">facebook</span></a
+            >
+            <a target="_blank" href="https://instagram.com/sodevtherealworld/"
+              ><i class="bi bi-instagram"></i
+              ><span class="tooltip">instagram</span></a
+            >
+            <!-- <a target="_blank" href="https://www.twitter.com"
+              ><i class="fa-brands fa-x-twitter"></i
+              ><span class="tooltip">twitter</span></a
+            > -->
+            <a target="_blank" href="https://wa.me/2120661104186"
+              ><i class="bi bi-whatsapp"></i
+              ><span class="tooltip">whatsapp</span></a
+            >
+          </div>
+        </div>
+        <div class="dev__team">
+          <span class="copyrights"
+            >جميع الحقوق محفوظة ©
+            <span class="copyrights__date">2023</span></span
+          >
+          <span class="tag">مصمم من طرف فريق <strong>SODEV</strong></span>
+        </div>
+      </div>
+    </footer>
+    <div id="loader">
+      <div class="loader-icon">
+        <img
+          class="loader__logo"
+          src="../../assets/imgs/logo-loader.png"
+          alt="sodev logo"
+        />
+        <p>SODEV ...</p>
+      </div>
+    </div>
+    <div class="to__top">
+      <a href="#services__main"><i class="bi bi-arrow-up-circle"></i></a>
+    </div>
+  </body>
+  <script src="../../assets/javascript/services.js"></script>
+  <script src="../../assets/javascript/script.js"></script>
+</html>

@@ -37,14 +37,54 @@
           <img src="assets/imgs/LOGO-black.png" alt="sodev-logo" />
           <div><span>SODEV</span> <span>die reale Welt</span></div>
         </a>
-        <ul>
+        <ul class="header__list">
           <li>
             <a href="#hero"><i class="bi bi-house-fill"></i>Startseite</a>
           </li>
-          <li>
-            <a href="#services"
-              ><i class="bi bi-briefcase"></i>Dienstleistungen</a
-            >
+          <li class="services__item">
+            <a class="services__dropdown-button"
+              ><i class="bi bi-briefcase"></i>Dienstleistungen
+              <i id="dropdown__icon" class="bi bi-caret-down"></i
+            ></a>
+
+            <ul class="services__dropdown-list">
+              <li>
+                <a href="./pages/de/developpement-de-logiciels.html">
+                  <img src="../../assets/imgs/header/dev.png" alt="" /> Software
+                  Development
+                </a>
+              </li>
+              <li>
+                <a href="./pages/de/applications-mobiles.html">
+                  <img src="../../assets/imgs/header/mobile.png" alt="" />
+                  Mobile Applications
+                </a>
+              </li>
+              <li>
+                <a href="./pages/de/developpement-de-sites-web.html">
+                  <img src="../../assets/imgs/header/web.png" alt="" />
+                  Webentwicklung
+                </a>
+              </li>
+              <li>
+                <a href="./pages/de/ecommerce.html">
+                  <img src="../../assets/imgs/header/ecomm.png" alt="" />
+                  E-Commerce
+                </a>
+              </li>
+              <li>
+                <a href="./pages/de/integration-de-systemes.html">
+                  <img src="../../assets/imgs/header/system.png" alt="" />
+                  Systemintegration
+                </a>
+              </li>
+              <li>
+                <a href="./pages/de/conception-ux-ui.html">
+                  <img src="../../assets/imgs/header/ux-ui.png" alt="" /> UX/UI
+                  Design
+                </a>
+              </li>
+            </ul>
           </li>
           <li>
             <a href="#steps"><i class="bi bi-bar-chart-steps"></i>Prozess</a>
@@ -109,26 +149,8 @@
     <main>
       <section id="hero" class="section hero__section">
         <div class="hero__text">
-          <!-- <div class="logo__container">
-            <img
-              class="logo"
-              src="assets/imgs/LOGO-black.svg"
-              alt="sodev-logo"
-            />
-            <span>creativity & services</span>
-          </div> -->
-
-          <!-- <h1>welcome to the real world</h1> -->
           <h1>"Der digitale Service, den Sie sich wünschen"</h1>
-
-          <!-- <p>
-            Nous élaborons des stratégies efficaces pour vous aider à atteindre
-            les clients et les prospects sur l'ensemble du web.
-          </p> -->
           <ul class="objectifs">
-            <!-- <li class="objectif">
-                <i class="bi bi-check2-square"></i>transformation numérique
-            </li> -->
             <li class="objectif">
               <i class="bi bi-check2-square"></i>Softwareentwicklung
             </li>
@@ -140,15 +162,6 @@
               <i class="bi bi-check2-square"></i>Entwicklung von mobilen
               Anwendungen
             </li>
-            <!-- <li class="objectif">
-                <i class="bi bi-check2-square"></i>conseil en gestion des projets
-            </li> -->
-            <!-- <li class="objectif">
-                <i class="bi bi-check2-square"></i>e-commerce
-            </li> -->
-            <!-- <li class="objectif">
-                <i class="bi bi-check2-square"></i>digitalisation des entreprises
-            </li> -->
             <li class="objectif">
               <i class="bi bi-check2-square"></i>Digitalisierungsberatung für
               Unternehmen
@@ -634,10 +647,10 @@
               ><i class="bi bi-instagram"></i
               ><span class="tooltip">instagram</span></a
             >
-            <a target="_blank" href="https://www.twitter.com"
+            <!-- <a target="_blank" href="https://www.twitter.com"
               ><i class="fa-brands fa-x-twitter"></i
               ><span class="tooltip">twitter</span></a
-            >
+            > -->
             <a target="_blank" href="https://wa.me/2120661104186"
               ><i class="bi bi-whatsapp"></i
               ><span class="tooltip">whatsapp</span></a

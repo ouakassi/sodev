@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce</title>
+    <meta
+      name="description"
+      content="SODEV, een dynamisch bedrijf gericht op de toekomst, past zich voortdurend aan aan het veranderende landschap van het digitale tijdperk."
+    />
+
+    <meta property="og:title" content="Sodev" />
+    <meta
+      property="og:description"
+      content="SODEV, een dynamisch bedrijf gericht op de toekomst."
+    />
+
+    <meta property="og:image" content="../../assets/imgs/LOGO-black.png" />
+    <meta property="og:url" content="https://sodevtherealworld.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Sodev" />
+    <link rel="icon" type="image/x-icon" href="../../assets/imgs/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../assets/css/normalize.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../assets/css/services.style.css"
+    />
+
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="../../index-nl.html" class="header__logo">
+          <img src="../../assets/imgs/LOGO-black.png" alt="sodev-logo" />
+          <div><span>SODEV</span> <span>De echte wereld</span></div>
+        </a>
+        <ul class="header__list">
+          <li>
+            <a href="../../index-nl.html#hero"
+              ><i class="bi bi-house-fill"></i>Startpagina</a
+            >
+          </li>
+          <li class="services__item">
+            <a class="services__dropdown-button"
+              ><i class="bi bi-briefcase"></i>diensten
+              <i id="dropdown__icon" class="bi bi-caret-down"></i
+            ></a>
+            <ul class="services__dropdown-list">
+              <li>
+                <a href="./developpement-de-logiciels.html"
+                  ><img
+                    src="../../assets/imgs/header/dev.png"
+                    alt=""
+                  />Softwareontwikkeling</a
+                >
+              </li>
+              <ul>
+                <a href="./applications-mobiles.html">
+                  <img src="../../assets/imgs/header/mobile.png" alt="" />
+                  Mobiele applicaties
+                </a>
+              </ul>
+              <ul>
+                <a href="./developpement-de-sites-web.html"
+                  ><img
+                    src="../../assets/imgs/header/web.png"
+                    alt=""
+                  />Webontwikkeling
+                </a>
+              </ul>
+              <ul>
+                <a href="./ecommerce.html"
+                  ><img
+                    src="../../assets/imgs/header/ecomm.png"
+                    alt=""
+                  />E-commerce
+                </a>
+              </ul>
+              <ul>
+                <a href="./integration-de-systemes.html"
+                  ><img
+                    src="../../assets/imgs/header/system.png"
+                    alt=""
+                  />Systeemintegratie</a
+                >
+              </ul>
+              <ul>
+                <a href="./conception-ux-ui.html"
+                  ><img
+                    src="../../assets/imgs/header/ux-ui.png"
+                    alt=""
+                  />UX/UI-vormgeving</a
+                >
+              </ul>
+            </ul>
+          </li>
+          <li>
+            <a href="../../index-nl.html#steps"
+              ><i class="bi bi-bar-chart-steps"></i>Proces</a
+            >
+          </li>
+          <li>
+            <a href="../../index-nl.html#contact"
+              ><i class="bi bi-telephone-fill"></i>contact</a
+            >
+          </li>
+        </ul>
+        <div class="languages">
+          <span class="languages__selector">
+            <img
+              class="languages__icon"
+              src="../../assets/imgs/languages/nl.png"
+              alt="nl"
+            />
+          </span>
+          <div class="languages__list">
+            <a href="../ecommerce.html">
+              <img
+                class="languages__icon"
+                src="../../assets/imgs/languages/fr.png"
+                alt="fr"
+              />
+              <span>Frans</span>
+            </a>
+            <a href="../en/ecommerce.html">
+              <img
+                class="languages__icon"
+                src="../../assets/imgs/languages/en.png"
+                alt="en"
+              />
+              <span>Engels</span>
+            </a>
+            <a href="../ar/ecommerce.html">
+              <img
+                class="languages__icon"
+                src="../../assets/imgs/languages/ar.png"
+                alt="ar"
+              />
+              <span>Arabisch</span>
+            </a>
+            <a href="../de/ecommerce.html">
+              <img
+                class="languages__icon"
+                src="../../assets/imgs/languages/de.png"
+                alt="de"
+              />
+              <span>Duits</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="close__button">
+          <i class="bi bi-x-circle"></i>
+        </div>
+        <div class="show__button">
+          <i class="bi bi-justify"></i>
+        </div>
+      </nav>
+    </header>
+    <main id="services__main">
+      <div class="service__header bg__img-ecommerce"></div>
+      <h1 class="header__title">E-Commerce</h1>
+      <section id="services" class="section service__page-section">
+        <p class="service__text-header">
+          Een e-commerce website is een online platform dat bedrijven in staat
+          stelt om hun producten en diensten rechtstreeks aan consumenten op het
+          internet te verkopen. Hier zijn enkele belangrijke punten om te
+          overwegen:
+        </p>
+
+        <div class="services__cards">
+          <div class="card">
+            <img
+              src="../../assets/imgs/services/ecommerce/product-managment.jpg"
+              alt="Productbeheer"
+            />
+            <div class="card__text">
+              <h1 class="lang" key="services-logiciels-heading">
+                Productbeheer
+              </h1>
+              <p class="lang" key="content">
+                Een e-commerce website vereist een productbeheersysteem dat het
+                toevoegen, wijzigen en verwijderen van producten mogelijk maakt.
+                Elk product moet een gedetailleerde beschrijving, afbeeldingen
+                en een prijs hebben.
+              </p>
+            </div>
+          </div>
+
+          <div class="card reverse">
+            <img
+              src="../../assets/imgs/services/ecommerce/shpping-cart.jpg"
+              alt="Winkelwagen en Afrekenproces"
+            />
+            <div class="card__text">
+              <h1 class="lang" key="services-logiciels-heading">
+                Winkelwagen en Afrekenproces
+              </h1>
+              <p class="lang" key="content">
+                Bezoekers moeten producten aan hun winkelwagen kunnen toevoegen,
+                hun winkelwagen kunnen bekijken, doorgaan naar afrekenen en
+                veilige online betalingen kunnen doen.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="../../assets/imgs/services/ecommerce/payment.jpg"
+              alt="Betalingsmogelijkheden"
+            />
+            <div class="card__text">
+              <h1 class="lang" key="services-logiciels-heading">
+                Betalingsmogelijkheden
+              </h1>
+              <p class="lang" key="content">
+                E-commerce websites bieden verschillende betalingsmogelijkheden,
+                zoals creditcards, PayPal, bankoverschrijvingen, enz. Het is
+                belangrijk om veilige betalingsmogelijkheden te bieden om het
+                vertrouwen van klanten te winnen.
+              </p>
+            </div>
+          </div>
+
+          <div class="card reverse">
+            <img
+              src="../../assets/imgs/services/ecommerce/order.jpg"
+              alt="Bestelbeheersysteem"
+            />
+            <div class="card__text">
+              <h1 class="lang" key="services-logiciels-heading">
+                Bestelbeheersysteem
+              </h1>
+              <p class="lang" key="content">
+                Zodra een bestelling is geplaatst, heeft de website een systeem
+                nodig om bestellingen te volgen, betalingen te verwerken en
+                verzendingen te beheren.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="../../assets/imgs/services/ecommerce/transaction.jpg"
+              alt="Transactiebeveiliging"
+            />
+            <div class="card__text">
+              <h1 class="lang" key="services-logiciels-heading">
+                Transactiebeveiliging
+              </h1>
+              <p class="lang" key="content">
+                Transactiebeveiliging is essentieel om gevoelige
+                klantinformatie, zoals betalingsgegevens, te beschermen. Het
+                gebruik van beveiligingsprotocollen zoals HTTPS en
+                versleutelingsmethoden is cruciaal.
+              </p>
+            </div>
+          </div>
+
+          <div class="card reverse">
+            <img
+              src="../../assets/imgs/services/ecommerce/user-interface.jpg"
+              alt="Gebruiksvriendelijke gebruikersinterface"
+            />
+            <div class="card__text">
+              <h1 class="lang" key="services-logiciels-heading">
+                Gebruiksvriendelijke Gebruikersinterface
+              </h1>
+              <p class="lang" key="content">
+                De gebruikersinterface moet gebruiksvriendelijk en intuïtief
+                zijn, zodat gebruikers gemakkelijk tussen producten kunnen
+                navigeren, resultaten kunnen filteren en snel kunnen vinden wat
+                ze zoeken.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="../../assets/imgs/services/ecommerce/customer-account.jpg"
+              alt="Klantaccountbeheer"
+            />
+            <div class="card__text">
+              <h1 class="lang" key="services-logiciels-heading">
+                Klantaccountbeheer
+              </h1>
+              <p class="lang" key="content">
+                Klanten moeten in staat zijn om accounts aan te maken, in te
+                loggen en hun persoonlijke informatie, bestelgeschiedenis en
+                voorkeuren te beheren.
+              </p>
+            </div>
+          </div>
+
+          <div class="card reverse">
+            <img
+              src="../../assets/imgs/services/ecommerce/responsive-design.jpg"
+              alt="Responsief Ontwerp"
+            />
+            <div class="card__text">
+              <h1 class="lang" key="services-logiciels-heading">
+                Responsief Ontwerp
+              </h1>
+              <p class="lang" key="content">
+                Aangezien klanten de site via verschillende apparaten openen, is
+                het essentieel dat de site responsief is en automatisch wordt
+                aangepast aan schermen van verschillende groottes.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="../../assets/imgs/services/ecommerce/product-reiews.jpg"
+              alt="Productrecensies en beoordelingen"
+            />
+            <div class="card__text">
+              <h1 class="lang" key="services-logiciels-heading">
+                Productrecensies en beoordelingen
+              </h1>
+              <p class="lang" key="content">
+                Klantrecensies van producten kunnen toekomstige kopers helpen
+                geïnformeerde beslissingen te nemen. Klantfeedback en
+                productbeoordelingen zijn belangrijke functies.
+              </p>
+            </div>
+          </div>
+
+          <div class="card reverse">
+            <img
+              src="../../assets/imgs/services/ecommerce/analysis.jpg"
+              alt="Analyse en Tracking"
+            />
+            <div class="card__text">
+              <h1 class="lang" key="services-logiciels-heading">
+                Analyse en Tracking
+              </h1>
+              <p class="lang" key="content">
+                Het is belangrijk om de prestaties van de site bij te houden,
+                waaronder verkoop, conversieratio's, verkeersbronnen, enz., om
+                de zakelijke strategie aan te passen.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <p class="service__text-footer">
+          In summary, the development of an e-commerce website requires
+          expertise in design, development, transaction management, and security
+          to provide a smooth, secure, and satisfying online shopping experience
+          for customers.
+        </p>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="wave__container">
+        <svg
+          width="100%"
+          height="100%"
+          id="svg"
+          viewBox="0 0 1440 390"
+          xmlns="http://www.w3.org/2000/svg"
+          class="transition duration-300 ease-in-out delay-150"
+        >
+          <path
+            d="M 0,400 C 0,400 0,200 0,200 C 115.35714285714289,169 230.71428571428578,138 335,128 C 439.2857142857142,118 532.4999999999998,129.00000000000003 674,157 C 815.5000000000002,184.99999999999997 1005.2857142857144,230 1141,240 C 1276.7142857142856,250 1358.3571428571427,225 1440,200 C 1440,200 1440,400 1440,400 Z"
+            stroke="none"
+            stroke-width="0"
+            fill="#000000"
+            fill-opacity="1"
+            class="transition-all duration-300 ease-in-out delay-150 path-0"
+          ></path>
+        </svg>
+      </div>
+      <div class="footer__wrapper">
+        <div class="footer__section-one">
+          <img
+            class="logo__white"
+            src="../../assets/imgs/LOGO-white.svg"
+            alt="Sodev Logo"
+          />
+          <p>
+            <strong>SODEV</strong>, een dynamisch bedrijf gericht op de
+            toekomst, past zich voortdurend aan aan het steeds veranderende
+            landschap van het digitale tijdperk.
+          </p>
+
+          <span class="space"></span>
+          <ul>
+            <a href="../../index-nl.html#hero"><li>Startpagina</li></a>
+            <a href="../../index-nl.html#services"><li>Diensten</li></a>
+            <a href="../../index-nl.html#steps"><li>Proces</li></a>
+            <a href="../../index-nl.html#contact"><li>Contact</li></a>
+          </ul>
+        </div>
+        <div class="footer__section-two">
+          <div class="address">
+            <div class="adress__mail">
+              <i class="bi bi-envelope-fill"></i>
+              <span>admin@sodevtherealworld.com</span>
+            </div>
+            <div class="adress__ad">
+              <i class="bi bi-geo-alt-fill"></i
+              ><span
+                >12 AV Driss 1<sup>e</sup> Tanger Office Centre Building, 2<sup
+                  >de</sup
+                >
+                verdieping °18, Tanger</span
+              >
+            </div>
+            <div class="adress__phone">
+              <i class="bi bi-telephone-fill"></i>
+              <span>06 61 10 41 86 / 05 39 32 35 28</span>
+            </div>
+          </div>
+          <div class="social-media__links">
+            <a target="_blank" href="https://facebook.com/sodevtherealworld/"
+              ><i class="bi bi-facebook"></i
+              ><span class="tooltip">facebook</span></a
+            >
+            <a target="_blank" href="https://instagram.com/sodevtherealworld/"
+              ><i class="bi bi-instagram"></i
+              ><span class="tooltip">instagram</span></a
+            >
+            <!-- <a target="_blank" href="https://www.twitter.com"
+              ><i class="fa-brands fa-x-twitter"></i
+              ><span class="tooltip">twitter</span></a
+            > -->
+            <a target="_blank" href="https://wa.me/2120661104186"
+              ><i class="bi bi-whatsapp"></i
+              ><span class="tooltip">whatsapp</span></a
+            >
+          </div>
+        </div>
+        <div class="dev__team">
+          <span class="copyrights"
+            >auteursrechten ©<span class="copyrights__date">2023</span></span
+          >
+          <span class="tag">Gemaakt door het <strong>SODEV</strong>-team</span>
+        </div>
+      </div>
+    </footer>
+    <div id="loader">
+      <div class="loader-icon">
+        <img
+          class="loader__logo"
+          src="../../assets/imgs/logo-loader.png"
+          alt="sodev logo"
+        />
+        <p>SODEV ...</p>
+      </div>
+    </div>
+    <div class="to__top">
+      <a href="#services__main"><i class="bi bi-arrow-up-circle"></i></a>
+    </div>
+  </body>
+  <script src="../../assets/javascript/services.js"></script>
+  <script src="../../assets/javascript/script.js"></script>
+</html>

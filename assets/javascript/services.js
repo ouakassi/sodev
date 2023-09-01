@@ -16,7 +16,7 @@ ScrollReveal().reveal(" .card", {
   distance: "50px",
   delay: 300,
   duration: 1200,
-  reset: true,
+
   interval: 500,
   cleanup: true,
 });
@@ -26,7 +26,7 @@ ScrollReveal().reveal(" .card.reverse", {
   distance: "50px",
   delay: 300,
   duration: 1200,
-  reset: true,
+
   interval: 500,
   cleanup: true,
 });
@@ -40,7 +40,6 @@ ScrollReveal().reveal(
     delay: 100, // Delay before the animation starts
     interval: 100, // Interval between word animations
     scale: 1, // Scale factor for text
-    reset: true, // Resets the animation on leaving the viewport
   }
 );
 

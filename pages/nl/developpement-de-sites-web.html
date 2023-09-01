@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Ontwikkeling</title>
+    <meta
+      name="description"
+      content="SODEV, een dynamisch bedrijf gericht op de toekomst, past zich voortdurend aan aan het veranderende landschap van het digitale tijdperk."
+    />
+
+    <meta property="og:title" content="Sodev" />
+    <meta
+      property="og:description"
+      content="SODEV, een dynamisch bedrijf gericht op de toekomst."
+    />
+
+    <meta property="og:image" content="../../assets/imgs/LOGO-black.png" />
+    <meta property="og:url" content="https://sodevtherealworld.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Sodev" />
+    <link rel="icon" type="image/x-icon" href="../../assets/imgs/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../assets/css/normalize.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../assets/css/services.style.css"
+    />
+
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="../../index-nl.html" class="header__logo">
+          <img src="../../assets/imgs/LOGO-black.png" alt="sodev-logo" />
+          <div><span>SODEV</span> <span>De echte wereld</span></div>
+        </a>
+        <ul class="header__list">
+          <li>
+            <a href="../../index-nl.html#hero"
+              ><i class="bi bi-house-fill"></i>Startpagina</a
+            >
+          </li>
+          <li class="services__item">
+            <a class="services__dropdown-button"
+              ><i class="bi bi-briefcase"></i>diensten
+              <i id="dropdown__icon" class="bi bi-caret-down"></i
+            ></a>
+            <ul class="services__dropdown-list">
+              <li>
+                <a href="./developpement-de-logiciels.html"
+                  ><img
+                    src="../../assets/imgs/header/dev.png"
+                    alt=""
+                  />Softwareontwikkeling</a
+                >
+              </li>
+              <ul>
+                <a href="./applications-mobiles.html">
+                  <img src="../../assets/imgs/header/mobile.png" alt="" />
+                  Mobiele applicaties
+                </a>
+              </ul>
+              <ul>
+                <a href="./developpement-de-sites-web.html"
+                  ><img
+                    src="../../assets/imgs/header/web.png"
+                    alt=""
+                  />Webontwikkeling
+                </a>
+              </ul>
+              <ul>
+                <a href="./ecommerce.html"
+                  ><img
+                    src="../../assets/imgs/header/ecomm.png"
+                    alt=""
+                  />E-commerce
+                </a>
+              </ul>
+              <ul>
+                <a href="./integration-de-systemes.html"
+                  ><img
+                    src="../../assets/imgs/header/system.png"
+                    alt=""
+                  />Systeemintegratie</a
+                >
+              </ul>
+              <ul>
+                <a href="./conception-ux-ui.html"
+                  ><img
+                    src="../../assets/imgs/header/ux-ui.png"
+                    alt=""
+                  />UX/UI-vormgeving</a
+                >
+              </ul>
+            </ul>
+          </li>
+          <li>
+            <a href="../../index-nl.html#steps"
+              ><i class="bi bi-bar-chart-steps"></i>Proces</a
+            >
+          </li>
+          <li>
+            <a href="../../index-nl.html#contact"
+              ><i class="bi bi-telephone-fill"></i>contact</a
+            >
+          </li>
+        </ul>
+        <div class="languages">
+          <span class="languages__selector">
+            <img
+              class="languages__icon"
+              src="../../assets/imgs/languages/nl.png"
+              alt="nl"
+            />
+          </span>
+          <div class="languages__list">
+            <a href="../developpement-de-sites-web.html">
+              <img
+                class="languages__icon"
+                src="../../assets/imgs/languages/fr.png"
+                alt="fr"
+              />
+              <span>Frans</span>
+            </a>
+            <a href="../en/developpement-de-sites-web.html">
+              <img
+                class="languages__icon"
+                src="../../assets/imgs/languages/en.png"
+                alt="en"
+              />
+              <span>Engels</span>
+            </a>
+            <a href="../ar/developpement-de-sites-web.html">
+              <img
+                class="languages__icon"
+                src="../../assets/imgs/languages/ar.png"
+                alt="ar"
+              />
+              <span>Arabisch</span>
+            </a>
+            <a href="../de/developpement-de-sites-web.html">
+              <img
+                class="languages__icon"
+                src="../../assets/imgs/languages/de.png"
+                alt="de"
+              />
+              <span>Duits</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="close__button">
+          <i class="bi bi-x-circle"></i>
+        </div>
+        <div class="show__button">
+          <i class="bi bi-justify"></i>
+        </div>
+      </nav>
+    </header>
+    <main id="services__main">
+      <div class="service__header bg__img-web"></div>
+      <h1 class="header__title">Website Ontwikkeling</h1>
+      <section id="services" class="section service__page-section">
+        <p class="service__text-header">
+          Webontwikkeling omvat de creatie en implementatie van webpagina's die
+          via het internet worden bekeken. Hier zijn enkele belangrijke punten
+          om te overwegen:
+        </p>
+
+        <div class="services__cards">
+          <div class="card">
+            <img
+              src="../../assets/imgs/services/website/visual-design.jpg"
+              alt="Web Development"
+            />
+            <div class="card__text">
+              <h1 class="lang" key="services-logiciels-heading">
+                Visueel Ontwerp
+              </h1>
+              <p class="lang" key="content">
+                Voordat u begint met het ontwikkelen van een website, is het
+                belangrijk om het visuele uiterlijk ervan te ontwerpen. Dit
+                omvat lay-out, kleuren, lettertypen, afbeeldingen en andere
+                visuele elementen die de identiteit van de site definiëren.
+              </p>
+            </div>
+          </div>
+
+          <div class="card reverse">
+            <img
+              src="../../assets/imgs/services/website/websites-type.jpg"
+              alt="Web Development"
+            />
+            <div class="card__text">
+              <h1 class="lang" key="services-logiciels-heading">
+                Soorten Websites
+              </h1>
+              <p class="lang" key="content">
+                Er zijn verschillende soorten websites, zoals showcase-websites
+                (om informatie te presenteren), e-commerce sites (om producten
+                online te verkopen), blogs, nieuwssites, educatieve platforms,
+                enzovoort.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="../../assets/imgs/services/website/programing-languages.jpg"
+              alt="Web Development"
+            />
+            <div class="card__text">
+              <h1 class="lang" key="services-logiciels-heading">
+                Programmeertalen en Technologieën
+              </h1>
+              <p class="lang" key="content">
+                Webontwikkeling omvat het gebruik van programmeertalen zoals
+                HTML, CSS en JavaScript. Frameworks en bibliotheken zoals
+                Bootstrap, jQuery en React kunnen ook worden gebruikt om het
+                ontwikkelingsproces te versnellen.
+              </p>
+            </div>
+          </div>
+
+          <div class="card reverse">
+            <img
+              src="../../assets/imgs/services/website/responsive.jpg"
+              alt="Web Development"
+            />
+            <div class="card__text">
+              <h1 class="lang" key="services-logiciels-heading">
+                Responsief Ontwerp
+              </h1>
+              <p class="lang" key="content">
+                Websites moeten worden ontworpen om responsief te zijn, wat
+                betekent dat ze correct moeten worden weergegeven op
+                verschillende apparaten, waaronder desktopcomputers, tablets en
+                smartphones.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="../../assets/imgs/services/website/USABILITY.jpg"
+              alt="Web Development"
+            />
+            <div class="card__text">
+              <h1 class="lang" key="services-logiciels-heading">
+                Bruikbaarheid (UX)
+              </h1>
+              <p class="lang" key="content">
+                Gebruikerservaring (UX) staat centraal in webontwikkeling.
+                Websites moeten gemakkelijk te navigeren zijn, met een logische
+                structuur en intuïtieve interacties voor bezoekers.
+              </p>
+            </div>
+          </div>
+
+          <div class="card reverse">
+            <img
+              src="../../assets/imgs/services/website/content.jpg"
+              alt="Web Development"
+            />
+            <div class="card__text">
+              <h1 class="lang" key="services-logiciels-heading">Inhoud</h1>
+              <p class="lang" key="content">
+                Websites hebben hoogwaardige inhoud nodig, of het nu tekst,
+                afbeeldingen, video's of andere vormen van media zijn. Inhoud
+                moet relevant, boeiend en goed georganiseerd zijn.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="../../assets/imgs/services/website/seo.jpg"
+              alt="Web Development"
+            />
+            <div class="card__text">
+              <h1 class="lang" key="services-logiciels-heading">
+                SEO (Zoekmachineoptimalisatie)
+              </h1>
+              <p class="lang" key="content">
+                SEO heeft tot doel de website te optimaliseren om goed te scoren
+                in zoekmachine-resultaten. Dit omvat het gebruik van relevante
+                zoekwoorden, een geoptimaliseerde site-structuur en andere
+                technieken om de online zichtbaarheid te verbeteren.
+              </p>
+            </div>
+          </div>
+
+          <div class="card reverse">
+            <img
+              src="../../assets/imgs/services/website/hosting.jpg"
+              alt="Web Development"
+            />
+            <div class="card__text">
+              <h1 class="lang" key="services-logiciels-heading">
+                Hosting en Domein
+              </h1>
+              <p class="lang" key="content">
+                Zodra de website is ontwikkeld, moet deze worden gehost op een
+                server om online toegankelijk te zijn. Het kiezen van een goede
+                hostingprovider en een geschikte domeinnaam is belangrijk.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="../../assets/imgs/services/website/security.jpg"
+              alt="Web Development"
+            />
+            <div class="card__text">
+              <h1 class="lang" key="services-logiciels-heading">Beveiliging</h1>
+              <p class="lang" key="content">
+                Beveiliging is essentieel om de website te beschermen tegen
+                cyberaanvallen. Dit omvat het beveiligen van formulieren,
+                bescherming tegen SQL-injectieaanvallen en andere
+                kwetsbaarheden.
+              </p>
+            </div>
+          </div>
+
+          <div class="card reverse">
+            <img
+              src="../../assets/imgs/services/website/maintenance.jpg"
+              alt="Web Development"
+            />
+            <div class="card__text">
+              <h1 class="lang" key="services-logiciels-heading">Onderhoud</h1>
+              <p class="lang" key="content">
+                Websites vereisen voortdurend onderhoud om ervoor te zorgen dat
+                ze up-to-date blijven, goed functioneren en compatibel zijn met
+                nieuwe browsers en apparaten.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="../../assets/imgs/services/website/analysis.jpg"
+              alt="Web Development"
+            />
+            <div class="card__text">
+              <h1 class="lang" key="services-logiciels-heading">
+                Prestatieanalyse
+              </h1>
+              <p class="lang" key="content">
+                Het is belangrijk om de prestaties van de site te monitoren,
+                inclusief paginalaadsnelheid, tijd die op de site wordt
+                doorgebracht en andere metingen om een optimale
+                gebruikerservaring te garanderen.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <p class="service__text-footer">
+          Kortom, webontwikkeling vereist een combinatie van vaardigheden op het
+          gebied van ontwerp, programmering, inhoud en beheer om aantrekkelijke,
+          functionele websites te creëren die voldoen aan de behoeften van
+          gebruikers.
+        </p>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="wave__container">
+        <svg
+          width="100%"
+          height="100%"
+          id="svg"
+          viewBox="0 0 1440 390"
+          xmlns="http://www.w3.org/2000/svg"
+          class="transition duration-300 ease-in-out delay-150"
+        >
+          <path
+            d="M 0,400 C 0,400 0,200 0,200 C 115.35714285714289,169 230.71428571428578,138 335,128 C 439.2857142857142,118 532.4999999999998,129.00000000000003 674,157 C 815.5000000000002,184.99999999999997 1005.2857142857144,230 1141,240 C 1276.7142857142856,250 1358.3571428571427,225 1440,200 C 1440,200 1440,400 1440,400 Z"
+            stroke="none"
+            stroke-width="0"
+            fill="#000000"
+            fill-opacity="1"
+            class="transition-all duration-300 ease-in-out delay-150 path-0"
+          ></path>
+        </svg>
+      </div>
+      <div class="footer__wrapper">
+        <div class="footer__section-one">
+          <img
+            class="logo__white"
+            src="../../assets/imgs/LOGO-white.svg"
+            alt="Sodev Logo"
+          />
+          <p>
+            <strong>SODEV</strong>, een dynamisch bedrijf gericht op de
+            toekomst, past zich voortdurend aan aan het steeds veranderende
+            landschap van het digitale tijdperk.
+          </p>
+
+          <span class="space"></span>
+          <ul>
+            <a href="../../index-nl.html#hero"><li>Startpagina</li></a>
+            <a href="../../index-nl.html#services"><li>Diensten</li></a>
+            <a href="../../index-nl.html#steps"><li>Proces</li></a>
+            <a href="../../index-nl.html#contact"><li>Contact</li></a>
+          </ul>
+        </div>
+        <div class="footer__section-two">
+          <div class="address">
+            <div class="adress__mail">
+              <i class="bi bi-envelope-fill"></i>
+              <span>admin@sodevtherealworld.com</span>
+            </div>
+            <div class="adress__ad">
+              <i class="bi bi-geo-alt-fill"></i
+              ><span
+                >12 AV Driss 1<sup>e</sup> Tanger Office Centre Building, 2<sup
+                  >de</sup
+                >
+                verdieping °18, Tanger</span
+              >
+            </div>
+            <div class="adress__phone">
+              <i class="bi bi-telephone-fill"></i>
+              <span>06 61 10 41 86 / 05 39 32 35 28</span>
+            </div>
+          </div>
+          <div class="social-media__links">
+            <a target="_blank" href="https://facebook.com/sodevtherealworld/"
+              ><i class="bi bi-facebook"></i
+              ><span class="tooltip">facebook</span></a
+            >
+            <a target="_blank" href="https://instagram.com/sodevtherealworld/"
+              ><i class="bi bi-instagram"></i
+              ><span class="tooltip">instagram</span></a
+            >
+            <!-- <a target="_blank" href="https://www.twitter.com"
+              ><i class="fa-brands fa-x-twitter"></i
+              ><span class="tooltip">twitter</span></a
+            > -->
+            <a target="_blank" href="https://wa.me/2120661104186"
+              ><i class="bi bi-whatsapp"></i
+              ><span class="tooltip">whatsapp</span></a
+            >
+          </div>
+        </div>
+        <div class="dev__team">
+          <span class="copyrights"
+            >auteursrechten ©<span class="copyrights__date">2023</span></span
+          >
+          <span class="tag">Gemaakt door het <strong>SODEV</strong>-team</span>
+        </div>
+      </div>
+    </footer>
+    <div id="loader">
+      <div class="loader-icon">
+        <img
+          class="loader__logo"
+          src="../../assets/imgs/logo-loader.png"
+          alt="sodev logo"
+        />
+        <p>SODEV ...</p>
+      </div>
+    </div>
+    <div class="to__top">
+      <a href="#services__main"><i class="bi bi-arrow-up-circle"></i></a>
+    </div>
+  </body>
+  <script src="../../assets/javascript/services.js"></script>
+  <script src="../../assets/javascript/script.js"></script>
+</html>
