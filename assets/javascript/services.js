@@ -31,17 +31,14 @@ ScrollReveal().reveal(" .card.reverse", {
   cleanup: true,
 });
 
-ScrollReveal().reveal(
-  " .header__title , .service__text-header , .service__text-footer",
-  {
-    origin: "bottom", // Animation origin
-    distance: "30px", // Distance from the origin
-    duration: 1200, // Animation duration in milliseconds
-    delay: 100, // Delay before the animation starts
-    interval: 100, // Interval between word animations
-    scale: 1, // Scale factor for text
-  }
-);
+ScrollReveal().reveal("  .service__text-header , .service__text-footer", {
+  origin: "bottom", // Animation origin
+  distance: "30px", // Distance from the origin
+  duration: 1200, // Animation duration in milliseconds
+  delay: 100, // Delay before the animation starts
+  interval: 100, // Interval between word animations
+  scale: 1, // Scale factor for text
+});
 
 // const showButton = document.querySelector(".show__button");
 // const closeButton = document.querySelector(".close__button");
@@ -84,19 +81,10 @@ textWrapper.innerHTML = textWrapper.textContent.replace(
   "<span class='letter'>$&</span>"
 );
 
-anime
-  .timeline()
-  .add({
-    targets: ".ml3 .letter",
-    opacity: [0, 1],
-    easing: "easeInOutQuad",
-    duration: 1000,
-    delay: (el, i) => 150 * (i + 1),
-  })
-  .add({
-    targets: ".ml3",
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000,
-  });
+anime.timeline().add({
+  targets: ".ml3 .letter",
+  opacity: [0, 1],
+  easing: "easeInOutQuad",
+  duration: 50,
+  delay: (el, i) => 80 * i,
+});

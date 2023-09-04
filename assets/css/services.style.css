@@ -142,4 +142,13 @@ main {
     max-width: 30rem;
     min-height: 20rem;
   }
+
+  .header__title {
+    font-size: var(--fs-3xl);
+  }
+
+  .service__text-header,
+  .service__text-footer {
+    font-size: 1.7rem;
+  }
 }

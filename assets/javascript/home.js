@@ -103,7 +103,6 @@ ScrollReveal({
 
 ScrollReveal({
   origin: "top",
-  // opacity: 1,
   distance: "50px",
   viewFactor: 0.1,
 }).reveal(".arrow", {
@@ -117,7 +116,13 @@ ScrollReveal().reveal(".contact__box", {
 });
 
 // buttons & texts
-
+ScrollReveal().reveal(".card .button", {
+  origin: "bottom",
+  distance: "50px",
+  delay: 300,
+  duration: 700,
+  cleanup: true,
+});
 // waves
 
 ScrollReveal(waveOptions).reveal(".steps__wave", { cleanup: true });
