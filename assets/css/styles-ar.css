@@ -60,4 +60,8 @@ footer .adress__phone {
     left: unset;
     right: 0;
   }
+
+  .to__top a {
+    padding: 0 0.6rem;
+  }
 }
