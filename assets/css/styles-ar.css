@@ -41,6 +41,11 @@ nav ul i,
   border-radius: 10% 0% 0% 10% / 100% 0% 0% 100%;
 }
 
+.card .button i {
+  margin-right: 0;
+  margin-left: 1rem;
+}
+
 .section__heading i {
   margin-left: 2rem;
   margin-right: 0;

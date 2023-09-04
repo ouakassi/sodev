@@ -672,6 +672,14 @@ main {
   /* text-shadow: 1px 1px 1px #9b7b2e; */
 }
 
+.card .button {
+  /* align-self: first baseline; */
+}
+
+.card .button i {
+  margin-right: 1rem;
+}
+
 /*==================== steps ====================*/
 
 .steps__section {
@@ -1326,4 +1334,9 @@ main {
   .steps .step__img {
     height: 20rem;
   }
+}
+
+.ml3 {
+  display: flex;
+  flex-direction: row;
 }
