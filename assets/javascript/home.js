@@ -76,11 +76,18 @@ ScrollReveal({
 });
 
 // services
-ScrollReveal(options).reveal(" .card img , .card h1 , .card p  ", {
+ScrollReveal(options).reveal(".card img , .card h1 , .card p", {
   interval: 300,
   cleanup: true,
 });
 
+// ScrollReveal().reveal(".button", {
+//   origin: "bottom",
+//   distance: "50px",
+//   delay: 300,
+//   duration: 700,
+//   cleanup: true,
+// });
 // steps
 ScrollReveal().reveal(".step__card ", {
   interval: 300,
@@ -116,13 +123,6 @@ ScrollReveal().reveal(".contact__box", {
 });
 
 // buttons & texts
-ScrollReveal().reveal(".card .button", {
-  origin: "bottom",
-  distance: "50px",
-  delay: 300,
-  duration: 700,
-  cleanup: true,
-});
 // waves
 
 ScrollReveal(waveOptions).reveal(".steps__wave", { cleanup: true });

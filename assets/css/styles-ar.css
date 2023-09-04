@@ -51,10 +51,6 @@ nav ul i,
   margin-right: 0;
 }
 
-.to__top a {
-  padding: 0.8rem 1.6rem;
-}
-
 footer .adress__phone {
   font-family: var(--font-6);
 }
