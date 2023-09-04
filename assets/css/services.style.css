@@ -55,7 +55,7 @@ main {
   font-size: var(--fs-4xl);
   font-family: var(--font-4);
   text-transform: uppercase;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   background: #9b7b2e;
   background: var(--text-gradient);
   -webkit-background-clip: text;
@@ -111,10 +111,10 @@ main {
   font-size: 2rem;
 }
 .service__text-header {
-  margin-bottom: 4rem;
+  margin-bottom: 8rem;
 }
 .service__text-footer {
-  margin-top: 4rem;
+  margin-top: 6rem;
 }
 
 @media screen and (max-width: 769px) {
