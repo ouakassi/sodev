@@ -1254,7 +1254,7 @@ main {
   }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 500px) {
   .section {
     padding: 1rem;
     margin-bottom: 3rem;
@@ -1290,6 +1290,7 @@ main {
   .step__card:hover {
     padding: 3rem 2rem;
   }
+
   .steps .step__img {
     height: 22rem;
   }
